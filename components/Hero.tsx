@@ -10,8 +10,8 @@ export default function Hero() {
           <p className="font-euclid font-medium">Let&apos;s Talk!</p>
         </div>
       </div>
-      <div className="flex justify-center items-center text-[20rem] noselect">
-        <p className="text-jurreyellow-light font-freigeistwide font-black pb-72">
+      <div className="flex justify-center items-center noselect">
+        <p className="text-jurreyellow-light font-freigeistwide font-black pb-72 text-[19vw]">
           JURRE
         </p>
       </div>

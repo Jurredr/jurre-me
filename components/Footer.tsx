@@ -5,12 +5,14 @@ import MaskSvg from './MaskSvg'
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex justify-between items-center px-16 py-10 font-euclid">
-      <div className="footer-left flex justify-center items-center gap-12">
+    <div className="flex justify-between items-center px-8 md:px-16 py-8 font-euclid">
+      <div className="footer-left flex justify-center items-center gap-4 md:gap-12 flex-col md:flex-row">
         <Logo color="black" />
-        <p className="text-gray-400 mt-1">&#169; 2021 All Rights Reserved</p>
+        <p className="text-gray-400 mt-1 md:text-sm">
+          &#169; 2021 All Rights Reserved
+        </p>
       </div>
-      <div className="footer-right flex justify-center items-center gap-11 text-black">
+      <div className="footer-right flex flex-col md:flex-row justify-center items-center gap-8 md:gap-11 text-black">
         <div
           className="footer-mail flex justify-center items-center gap-2 cursor-pointer"
           onClick={(e) => {
@@ -19,13 +21,7 @@ const Footer: React.FC = () => {
             e.preventDefault()
           }}
         >
-          <Image
-            src="/icons/mail.svg"
-            alt="Email"
-            width={17}
-            height={14}
-            draggable="false"
-          />
+          <MaskSvg className="h-4 w-4 cursor-pointer" url="/icons/mail.svg" />
           <p>contact@jurre.me</p>
         </div>
         <div className="footer-media-icons flex justify-center items-center gap-5">
