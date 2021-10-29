@@ -1,4 +1,5 @@
 import React from 'react'
+import MaskSvg from './MaskSvg'
 
 interface Props {
   color?: string
@@ -7,13 +8,10 @@ interface Props {
 const Logo: React.FC<Props> = (props) => {
   return (
     <div className="footer-logo flex items-baseline justify-center gap-2 cursor-default noselect">
-      <div
+      <MaskSvg
         className="h-7 w-7"
-        style={{
-          WebkitMask: 'url("/icons/logo-icon.svg") no-repeat center / contain',
-          mask: 'url("/icons/logo-icon.svg") no-repeat center / contain',
-          backgroundColor: `${props.color || 'black'}`
-        }}
+        url="url('/icons/logo-icon.svg')"
+        color={props.color}
       />
       <p
         className="font-medium text-3xl"
