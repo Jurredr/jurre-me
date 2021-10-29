@@ -8,6 +8,17 @@ module.exports = {
         freigeist: ['Freigeist'],
         freigeistwide: ['Freigeist Wide'],
         euclid: ['Euclid Circular B']
+      },
+      colors: {
+        jurreyellow: {
+          light: '#FFEC91',
+          DEFAULT: '#FFDE36',
+          dark: '#FFC532'
+        },
+        jurrepurple: '#9C67FF',
+        jurremagenta: '#DC98FF',
+        jurreblue: '#54BBFF',
+        lighterblack: '#2A2A2A'
       }
     }
   },
