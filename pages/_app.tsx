@@ -11,7 +11,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Jurre de Ruiter is an ambitious 19 y/o developer, Computer Science student, and content creator from The Netherlands."
+          content="Jurre de Ruiter is an ambitious 19 y/o developer,
+          Computer Science student, and content creator from The Netherlands."
         />
       </Head>
       <Component {...pageProps} />
