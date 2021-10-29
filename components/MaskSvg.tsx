@@ -11,8 +11,8 @@ const MaskSvg: React.FC<Props> = (props) => {
     <div
       className={props.className}
       style={{
-        WebkitMask: `${props.url} no-repeat center / contain`,
-        mask: `${props.url} no-repeat center / contain`,
+        WebkitMask: `url('${props.url}') no-repeat center / contain`,
+        mask: `url('${props.url}') no-repeat center / contain`,
         backgroundColor: `${props.color || 'black'}`
       }}
     />
