@@ -10,7 +10,7 @@ const Logo: React.FC<Props> = (props) => {
     <div className="footer-logo flex items-baseline justify-center gap-2 cursor-default noselect">
       <MaskSvg
         className="h-7 w-7"
-        url="url('/icons/logo-icon.svg')"
+        url="/icons/logo-icon.svg"
         color={props.color}
       />
       <p

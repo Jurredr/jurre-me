@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Logo from './Logo'
+import MaskSvg from './MaskSvg'
 
 const Footer: React.FC = () => {
   return (
@@ -34,13 +35,9 @@ const Footer: React.FC = () => {
             target="_blank"
             className="h-[19px]"
           >
-            <Image
-              className="cursor-pointer"
-              src="/icons/instagram.svg"
-              alt="Instagram"
-              width={19}
-              height={19}
-              draggable="false"
+            <MaskSvg
+              className="h-5 w-5 cursor-pointer"
+              url="/icons/instagram.svg"
             />
           </a>
           <a
@@ -49,13 +46,9 @@ const Footer: React.FC = () => {
             target="_blank"
             className="h-[19px]"
           >
-            <Image
-              className="cursor-pointer"
-              src="/icons/twitter.svg"
-              alt="Twitter"
-              width={19}
-              height={19}
-              draggable="false"
+            <MaskSvg
+              className="h-5 w-5 cursor-pointer"
+              url="/icons/twitter.svg"
             />
           </a>
           <a
@@ -64,13 +57,9 @@ const Footer: React.FC = () => {
             target="_blank"
             className="h-[19px]"
           >
-            <Image
-              className="cursor-pointer"
-              src="/icons/github.svg"
-              alt="GitHub"
-              width={19}
-              height={19}
-              draggable="false"
+            <MaskSvg
+              className="h-5 w-5 cursor-pointer"
+              url="/icons/github.svg"
             />
           </a>
           <a
@@ -79,13 +68,9 @@ const Footer: React.FC = () => {
             target="_blank"
             className="h-[19px]"
           >
-            <Image
-              className="cursor-pointer"
-              src="/icons/linkedin.svg"
-              alt="LinkedIn"
-              width={19}
-              height={19}
-              draggable="false"
+            <MaskSvg
+              className="h-5 w-5 cursor-pointer"
+              url="/icons/linkedin.svg"
             />
           </a>
         </div>
