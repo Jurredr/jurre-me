@@ -18,7 +18,7 @@ module.exports = {
         jurrepurple: '#9C67FF',
         jurremagenta: '#DC98FF',
         jurreblue: '#54BBFF',
-        lighterblack: '#2A2A2A'
+        jurreblack: '#2A2A2A'
       }
     }
   },
