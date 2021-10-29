@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 interface Props {
   color?: string
@@ -8,15 +7,18 @@ interface Props {
 const Logo: React.FC<Props> = (props) => {
   return (
     <div className="footer-logo flex items-baseline justify-center gap-2 cursor-default noselect">
-      <Image
-        className={props.color || 'text-black'}
-        src="/icons/logo-icon.svg"
-        alt=""
-        width={27}
-        height={28}
-        draggable="false"
+      <div
+        className="h-7 w-7"
+        style={{
+          WebkitMask: 'url("/icons/logo-icon.svg") no-repeat center / contain',
+          mask: 'url("/icons/logo-icon.svg") no-repeat center / contain',
+          backgroundColor: `${props.color || 'black'}`
+        }}
       />
-      <p className={(props.color || 'text-black') + ' font-medium text-3xl'}>
+      <p
+        className="font-medium text-3xl"
+        style={{ color: `${props.color || 'black'}` }}
+      >
         Jurre.me
       </p>
     </div>

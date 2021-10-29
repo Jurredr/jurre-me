@@ -5,13 +5,13 @@ export default function Hero() {
   return (
     <div className="bg-jurreyellow-dark flex flex-col">
       <div className="flex justify-between px-16 py-8">
-        <Logo color="text-white" />
-        <div className="bg-white rounded-[20px]">
+        <Logo color="white" />
+        <div className="bg-white rounded-[20px] cursor-pointer py-3 px-8">
           <p className="font-euclid font-medium">Let&apos;s Talk!</p>
         </div>
       </div>
       <div className="flex justify-center items-center text-[20rem] noselect">
-        <p className="text-jurreyellow-light font-freigeistwide font-black">
+        <p className="text-jurreyellow-light font-freigeistwide font-black pb-72">
           JURRE
         </p>
       </div>

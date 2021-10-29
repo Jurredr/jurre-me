@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <div className="flex justify-between items-center px-16 py-10 font-euclid">
       <div className="footer-left flex justify-center items-center gap-12">
-        <Logo />
+        <Logo color="black" />
         <p className="text-gray-400 mt-1">&#169; 2021 All Rights Reserved</p>
       </div>
       <div className="footer-right flex justify-center items-center gap-11 text-black">
