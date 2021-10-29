@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from './Logo'
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <div className="flex justify-between items-center p-16 font-euclid">
       <div className="footer-left flex justify-center items-center gap-12">
@@ -93,3 +93,5 @@ export default function Footer() {
     </div>
   )
 }
+
+export default Footer
