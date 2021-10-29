@@ -1,20 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
     <div className="flex justify-between items-center p-16 font-euclid">
       <div className="footer-left flex justify-center items-center gap-12">
-        <div className="footer-logo flex items-baseline justify-center gap-2 cursor-default">
-          <Image
-            src="/icons/logo-icon.svg"
-            alt=""
-            width={27}
-            height={28}
-            draggable="false"
-          />
-          <p className="text-black font-medium text-3xl">Jurre.me</p>
-        </div>
+        <Logo />
         <p className="text-gray-400 mt-1">&#169; 2021 All Rights Reserved</p>
       </div>
       <div className="footer-right flex justify-center items-center gap-11 text-black">
