@@ -4,7 +4,7 @@ import Logo from './Logo'
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex justify-between items-center p-16 font-euclid">
+    <div className="flex justify-between items-center px-16 py-10 font-euclid">
       <div className="footer-left flex justify-center items-center gap-12">
         <Logo />
         <p className="text-gray-400 mt-1">&#169; 2021 All Rights Reserved</p>
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         >
           <Image
             src="/icons/mail.svg"
-            alt=""
+            alt="Email"
             width={17}
             height={14}
             draggable="false"
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <Image
               className="cursor-pointer"
               src="/icons/instagram.svg"
-              alt=""
+              alt="Instagram"
               width={19}
               height={19}
               draggable="false"
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             <Image
               className="cursor-pointer"
               src="/icons/twitter.svg"
-              alt=""
+              alt="Twitter"
               width={19}
               height={19}
               draggable="false"
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
             <Image
               className="cursor-pointer"
               src="/icons/github.svg"
-              alt=""
+              alt="GitHub"
               width={19}
               height={19}
               draggable="false"
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
             <Image
               className="cursor-pointer"
               src="/icons/linkedin.svg"
-              alt=""
+              alt="LinkedIn"
               width={19}
               height={19}
               draggable="false"
