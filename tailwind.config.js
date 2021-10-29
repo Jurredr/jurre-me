@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         freigeist: ['Freigeist'],
+        freigeistwide: ['Freigeist Wide'],
         euclid: ['Euclid Circular B']
       }
     }
