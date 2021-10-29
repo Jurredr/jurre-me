@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             href="https://www.instagram.com/jurre.053/"
             rel="noreferrer"
             target="_blank"
-            className="h-[19px]"
+            className="h-5"
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             href="https://twitter.com/JurredeRuiter"
             rel="noreferrer"
             target="_blank"
-            className="h-[19px]"
+            className="h-5"
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             href="https://github.com/jurredr"
             rel="noreferrer"
             target="_blank"
-            className="h-[19px]"
+            className="h-5"
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
             href="https://www.linkedin.com/in/jurre-de-ruiter-2503901b4/"
             rel="noreferrer"
             target="_blank"
-            className="h-[19px]"
+            className="h-5"
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
