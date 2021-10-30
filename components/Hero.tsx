@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center items-center noselect">
-        <p className="text-jurreyellow-light font-freigeistwide font-black pb-72 text-[19vw]">
+        <p className="text-jurreyellow-light font-freigeistwide font-black pb-72 text-[19vw] tracking-tight">
           JURRE
         </p>
       </div>
