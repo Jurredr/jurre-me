@@ -3,10 +3,8 @@ import { defineConfig } from 'windicss/helpers'
 export default defineConfig({
   mode: 'jit',
   extract: {
-    include: [
-      './pages/**/*.{js,ts,jsx,tsx}',
-      './components/**/*.{js,ts,jsx,tsx}'
-    ]
+    include: ['**/*.{jsx,tsx,css}'],
+    exclude: ['node_modules', '.git', '.next']
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
