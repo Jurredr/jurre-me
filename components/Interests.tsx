@@ -24,8 +24,8 @@ const Interests: React.FC = () => {
         </p>
       </div>
       <p
-        className="text-jurremagenta"
-        style={{ writingMode: 'vertical-lr', textOrientation: 'upright' }}
+        className="text-jurremagenta write-vertical-left write-orient-upright"
+        // style={{ writingMode: 'vertical-lr', textOrientation: 'upright' }}
       >
         BIZZ
       </p>
