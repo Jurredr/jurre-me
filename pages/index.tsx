@@ -6,8 +6,19 @@ import Interests from '../components/Interests'
 const Home: NextPage = () => {
   return (
     <div>
+      {/* Hero section */}
       <Hero />
+
+      {/* About section */}
+
+      {/* Interests section */}
       <Interests />
+
+      {/* Work section */}
+
+      {/* Contact section */}
+
+      {/* Footer section */}
       <Footer />
     </div>
   )

@@ -7,6 +7,7 @@ import 'windi.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
+      {/* The Head metadata */}
       <Head>
         <title>Jurre de Ruiter | Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,6 +17,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           Computer Science student, and content creator from The Netherlands."
         />
       </Head>
+
+      {/* The page component */}
       <Component {...pageProps} />
     </RecoilRoot>
   )
