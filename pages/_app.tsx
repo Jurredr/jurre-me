@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { RecoilRoot } from 'recoil'
 import Head from 'next/head'
 import 'windi.css'
+import Cursor from '../components/Cursor'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,6 +21,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       {/* The page component */}
       <Component {...pageProps} />
+
+      {/* Custom cursor */}
+      <Cursor />
     </RecoilRoot>
   )
 }
