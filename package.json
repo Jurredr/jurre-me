@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
     "framer-motion": "^5.0.0",
     "next": "11.1.2",
     "react": "17.0.2",
