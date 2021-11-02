@@ -24,6 +24,12 @@ export default function Hero() {
           JURRE
         </p>
       </div>
+      <div className="flex flex-col gap-4 absolute bottom-8 left-16">
+        <div className="h-4 w-4 bg-white rounded-full cursor-pointer" />
+        <div className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer" />
+        <div className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer" />
+        <div className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer" />
+      </div>
     </div>
   )
 }
