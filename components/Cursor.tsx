@@ -33,19 +33,13 @@ const Cursor: React.FC = () => {
     }
 
     // Mouse move
-    window.addEventListener('mousemove', (e) => {
-      handleMouse(e)
-    })
+    window.addEventListener('mousemove', (e) => handleMouse(e), false)
 
     // Mouse down
-    window.addEventListener('mousedown', (e) => {
-      handleMouse(e)
-    })
+    window.addEventListener('mousedown', (e) => handleMouse(e), false)
 
     // Mouse up
-    window.addEventListener('mouseup', (e) => {
-      handleMouse(e)
-    })
+    window.addEventListener('mouseup', (e) => handleMouse(e), false)
 
     // Remove the event listeners
     return () => {
