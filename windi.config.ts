@@ -23,7 +23,8 @@ export default defineConfig({
         jurrepurple: '#9C67FF',
         jurremagenta: '#DC98FF',
         jurreblue: '#54BBFF',
-        jurreblack: '#2A2A2A'
+        jurreblack: '#2A2A2A',
+        jurreorange: '#FFA800'
       }
     }
   },

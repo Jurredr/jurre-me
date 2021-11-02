@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Interests from '../components/Interests'
 import ChatBubble from '../components/ChatBubble'
+import About from '../components/About'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
         <Hero />
 
         {/* About section */}
+        <About />
 
         {/* Interests section */}
         <Interests />
