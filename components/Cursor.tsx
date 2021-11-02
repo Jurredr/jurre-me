@@ -5,25 +5,44 @@ const Cursor: React.FC = () => {
   const innerCursorRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Mouse move
-    window.addEventListener('mousemove', (e) => {
+    function handleMouse(e: MouseEvent) {
+      console.log(e.type)
+
       if (cursorRef.current && innerCursorRef.current) {
         cursorRef.current.style.cssText =
-          innerCursorRef.current.style.cssText = `left: ${e.clientX}px; top: ${e.clientY}px;`
+          innerCursorRef.current.style.cssText = `left: ${e.clientX}px; top: ${
+            e.clientY
+          }px; ${
+            e.type === 'mousedown'
+              ? `width: 1rem; height: 1rem;`
+              : e.type === 'mouseup'
+              ? `width: 0.5rem; height: 0.5rem;`
+              : ''
+          }`
       }
+    }
+
+    // Mouse move
+    window.addEventListener('mousemove', (e) => {
+      handleMouse(e)
     })
 
     // Mouse down
     window.addEventListener('mousedown', (e) => {
-      if (innerCursorRef.current)
-        innerCursorRef.current.style.cssText = `left: ${e.clientX}px; top: ${e.clientY}px; width: 1rem; height: 1rem;`
+      handleMouse(e)
     })
 
     // Mouse up
     window.addEventListener('mouseup', (e) => {
-      if (innerCursorRef.current)
-        innerCursorRef.current.style.cssText = `left: ${e.clientX}px; top: ${e.clientY}px; width: 0.5rem; height: 0.5rem;`
+      handleMouse(e)
     })
+
+    // Remove the event listeners
+    return () => {
+      window.removeEventListener('mousemove', handleMouse, false)
+      window.removeEventListener('mousedown', handleMouse, false)
+      window.removeEventListener('mouseup', handleMouse, false)
+    }
   }, [])
 
   return (
