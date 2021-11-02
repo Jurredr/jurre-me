@@ -6,8 +6,6 @@ const Cursor: React.FC = () => {
 
   useEffect(() => {
     function handleMouse(e: MouseEvent) {
-      console.log(e.type)
-
       if (cursorRef.current && innerCursorRef.current) {
         const pos = `left: ${e.clientX}px; top: ${e.clientY}px;`
 
