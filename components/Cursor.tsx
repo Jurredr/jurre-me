@@ -9,10 +9,20 @@ const Cursor: React.FC = () => {
       console.log(e.type)
 
       if (cursorRef.current && innerCursorRef.current) {
+        const pos = `left: ${e.clientX}px; top: ${e.clientY}px;`
+
         cursorRef.current.style.cssText =
-          innerCursorRef.current.style.cssText = `left: ${e.clientX}px; top: ${
-            e.clientY
-          }px; ${
+          pos +
+          ` ${
+            e.type === 'mousedown'
+              ? `width: 2.5rem; height: 2.5rem;`
+              : e.type === 'mouseup'
+              ? `width: 3rem; height: 3rem;`
+              : ''
+          }`
+        innerCursorRef.current.style.cssText =
+          pos +
+          ` ${
             e.type === 'mousedown'
               ? `width: 1rem; height: 1rem;`
               : e.type === 'mouseup'
@@ -49,9 +59,7 @@ const Cursor: React.FC = () => {
     <div>
       <div
         ref={cursorRef}
-        className={
-          'fixed w-12 h-12 border-black border-2 z-10 rounded-full pointer-events-none duration-150 transform -translate-x-1/2 -translate-y-1/2'
-        }
+        className="fixed w-12 h-12 border-black border-2 z-10 rounded-full pointer-events-none duration-150 transform -translate-x-1/2 -translate-y-1/2"
       />
       <div
         ref={innerCursorRef}
