@@ -39,6 +39,16 @@ const Cursor: React.FC = () => {
     // Mouse up
     window.addEventListener('mouseup', (e) => handleMouse(e), false)
 
+    // Dispatch move event on mount
+    const mouseMoveEvent = new MouseEvent('mousemove', {
+      view: window,
+      bubbles: true,
+      cancelable: true,
+      clientX: window.screen.width / 2,
+      clientY: window.screen.height / 2
+    })
+    window.dispatchEvent(mouseMoveEvent)
+
     // Remove the event listeners
     return () => {
       window.removeEventListener('mousemove', handleMouse, false)
