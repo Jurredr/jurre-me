@@ -6,14 +6,9 @@ const Interests: React.FC = () => {
       <p className="text-jurreyellow write-vertical-left write-orient-upright">
         CODE
       </p>
-      <div className="flex flex-col">
-        <p className="text-jurrepurple write-vertical-left write-orient-upright">
-          UI
-        </p>
-        <p className="text-jurreblue write-vertical-left write-orient-upright">
-          UX
-        </p>
-      </div>
+      <p className="write-vertical-left write-orient-upright text-jurrepurple">
+        UI<span className="text-jurreblue">UX</span>
+      </p>
       <p className="text-jurremagenta write-vertical-left write-orient-upright">
         BIZZ
       </p>
