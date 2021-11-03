@@ -3,7 +3,8 @@
   font-style: normal;
   font-weight: 100;
   src: local('Freigeist Thin'),
-    url('../../public/fonts/freigeist/regular/freigeist-thin.ttf') format('ttf');
+    url('../../public/fonts/freigeist/regular/freigeist-thin.ttf')
+      format('truetype');
 }
 
 @font-face {
@@ -12,7 +13,7 @@
   font-weight: 100;
   src: local('Freigeist Thin Italic'),
     url('../../public/fonts/freigeist/regular/freigeist-thinitalic.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -21,7 +22,7 @@
   font-weight: 300;
   src: local('Freigeist Light'),
     url('../../public/fonts/freigeist/regular/freigeist-light.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -30,7 +31,7 @@
   font-weight: 300;
   src: local('Freigeist Light Italic'),
     url('../../public/fonts/freigeist/regular/freigeist-lightitalic.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -39,7 +40,7 @@
   font-weight: normal;
   src: local('Freigeist Regular Italic'),
     url('../../public/fonts/freigeist/regular/freigeist-regularitalic.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -48,7 +49,7 @@
   font-weight: 500;
   src: local('Freigeist Medium'),
     url('../../public/fonts/freigeist/regular/freigeist-medium.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -57,7 +58,7 @@
   font-weight: 500;
   src: local('Freigeist Medium Italic'),
     url('../../public/fonts/freigeist/regular/freigeist-mediumitalic.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -65,7 +66,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('Freigeist Bold'),
-    url('../../public/fonts/freigeist/regular/freigeist-bold.ttf') format('ttf');
+    url('../../public/fonts/freigeist/regular/freigeist-bold.ttf')
+      format('truetype');
 }
 
 @font-face {
@@ -74,7 +76,7 @@
   font-weight: 700;
   src: local('Freigeist Bold Italic'),
     url('../../public/fonts/freigeist/regular/freigeist-bolditalic.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -83,7 +85,7 @@
   font-weight: 900;
   src: local('Freigeist Black'),
     url('../../public/fonts/freigeist/regular/freigeist-black.ttf')
-      format('ttf');
+      format('truetype');
 }
 
 @font-face {
@@ -92,5 +94,5 @@
   font-weight: 900;
   src: local('Freigeist Black Italic'),
     url('../../public/fonts/freigeist/regular/freigeist-blackitalic.ttf')
-      format('ttf');
+      format('truetype');
 }
