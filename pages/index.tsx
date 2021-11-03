@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       {/* Chat bubble */}
       <ChatBubble />
 
-      <div className="h-full w-full absolute overflow-auto">
+      <div className="h-full w-full absolute overflow-auto relative">
         {/* Hero section */}
         <Hero />
 

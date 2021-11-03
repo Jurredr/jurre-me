@@ -10,3 +10,16 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
+
+.nextimg {
+  img {
+    width: 100% !important;
+    position: relative !important;
+    height: 60rem !important;
+  }
+
+  & > div {
+    position: unset !important;
+    overflow: visible !important;
+  }
+}
