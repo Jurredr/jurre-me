@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import Logo from './Logo'
-import Image from 'next/image'
 
 export default function Hero() {
   const animateTest = {
@@ -209,13 +208,13 @@ export default function Hero() {
           duration: 1.2
         }}
       >
-        <Image
+        <img
           src="/jurre-wave.png"
           alt="Jurre 3D character waving"
           className="!h-[60rem] transform rotate-[18deg]"
           draggable="false"
-          layout="fill"
-          priority={true}
+          // layout="fill"
+          // priority={true}
         />
       </motion.div>
       <div className="flex flex-col gap-4 absolute bottom-12 left-16">
