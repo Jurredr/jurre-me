@@ -5,19 +5,22 @@ import Interests from '../components/Interests'
 import ChatBubble from '../components/ChatBubble'
 import About from '../components/About'
 import Work from '../components/Work'
+import { useAnimation } from 'framer-motion'
 
 const Home: NextPage = () => {
+  const chatControls = useAnimation()
+
   return (
     <div className="relative w-screen h-screen">
       {/* Chat bubble */}
-      <ChatBubble />
+      <ChatBubble chatControls={chatControls} />
 
       <div className="h-full w-full absolute overflow-auto relative">
         {/* Hero section */}
         <Hero />
 
         {/* About section */}
-        <About />
+        <About chatControls={chatControls} />
 
         {/* Interests section */}
         <Interests />
