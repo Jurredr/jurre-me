@@ -215,6 +215,7 @@ export default function Hero() {
           className="!h-[60rem] transform rotate-[18deg]"
           draggable="false"
           layout="fill"
+          priority={true}
         />
       </motion.div>
       <div className="flex flex-col gap-4 absolute bottom-12 left-16">
