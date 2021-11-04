@@ -208,6 +208,7 @@ export default function Hero() {
           duration: 1.2
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/jurre-wave.png"
           alt="Jurre 3D character waving"
