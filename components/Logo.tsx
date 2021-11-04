@@ -15,6 +15,7 @@ const Logo: React.FC<Props> = (props) => {
       />
       <p
         className="font-medium text-xl md:text-3xl"
+        draggable="false"
         style={{ color: `${props.color || 'black'}` }}
       >
         Jurre.me
