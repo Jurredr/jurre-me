@@ -48,6 +48,7 @@ export default function Hero() {
           <motion.p
             className="text-white cursor-pointer font-medium"
             whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.1 }}
             transition={{
               duration: 0.2
             }}
@@ -57,6 +58,7 @@ export default function Hero() {
           <motion.p
             className="text-white cursor-pointer font-medium"
             whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.1 }}
             transition={{
               duration: 0.2
             }}
@@ -215,7 +217,7 @@ export default function Hero() {
           layout="fill"
         />
       </motion.div>
-      <div className="flex flex-col gap-4 absolute bottom-8 left-16">
+      <div className="flex flex-col gap-4 absolute bottom-12 left-16">
         <motion.div
           className="h-4 w-4 bg-white rounded-full cursor-pointer"
           variants={animateTest}
@@ -238,6 +240,7 @@ export default function Hero() {
           <motion.div
             className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
             whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.1 }}
             transition={{
               delay: 0,
               duration: 0.15
@@ -256,6 +259,7 @@ export default function Hero() {
           <motion.div
             className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
             whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.1 }}
             transition={{
               delay: 0,
               duration: 0.15
@@ -274,6 +278,7 @@ export default function Hero() {
           <motion.div
             className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
             whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.1 }}
             transition={{
               delay: 0,
               duration: 0.15
