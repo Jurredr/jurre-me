@@ -8,7 +8,7 @@ import ChatBubble from '../components/ChatBubble'
 
 const Home: NextPage = () => {
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full overflow-hidden">
       {/* Chat bubble */}
       <ChatBubble />
 
