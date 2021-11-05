@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 
 const MaskSvg: React.FC<Props> = (props) => {
   return (
-    <div
+    <motion.div
       className={props.className}
       style={{
         WebkitMask: `url('${props.url}') no-repeat center / contain`,
