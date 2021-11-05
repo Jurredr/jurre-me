@@ -1,19 +1,13 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import {
+  basicHoverTapScale,
+  basicHoverTapScaleExtended,
+  navBubbles
+} from '../lib/AnimationPresets'
 import Logo from './Logo'
 
 export default function Hero() {
-  const animateTest = {
-    hidden: {
-      opacity: 0.5,
-      x: -100
-    },
-    visible: {
-      opacity: 1,
-      x: 0
-    }
-  }
-
   return (
     <div className="bg-jurreyellow-dark flex flex-col overflow-hidden relative">
       <motion.div
@@ -36,41 +30,33 @@ export default function Hero() {
         }}
       >
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{
-            duration: 0.2
-          }}
+          whileHover={basicHoverTapScale.hover}
+          transition={{ duration: basicHoverTapScale.duration }}
         >
           <Logo color="white" />
         </motion.div>
         <div className="flex justify-center items-center gap-8">
           <motion.p
             className="text-white cursor-pointer font-medium"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 1.1 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScaleExtended.hover}
+            whileTap={basicHoverTapScaleExtended.tap}
+            transition={{ duration: basicHoverTapScaleExtended.duration }}
           >
             About
           </motion.p>
           <motion.p
             className="text-white cursor-pointer font-medium"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 1.1 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScaleExtended.hover}
+            whileTap={basicHoverTapScaleExtended.tap}
+            transition={{ duration: basicHoverTapScaleExtended.duration }}
           >
             Work
           </motion.p>
           <motion.div
             className="bg-white rounded-[20px] cursor-pointer py-3 px-8"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.05 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
           >
             <p className="font-euclid font-medium noselect">Let&apos;s Talk!</p>
           </motion.div>
@@ -214,14 +200,12 @@ export default function Hero() {
           alt="Jurre 3D character waving"
           className="!h-[60rem] transform rotate-[18deg]"
           draggable="false"
-          // layout="fill"
-          // priority={true}
         />
       </motion.div>
       <div className="flex flex-col gap-4 absolute bottom-12 left-16">
         <motion.div
           className="h-4 w-4 bg-white rounded-full cursor-pointer"
-          variants={animateTest}
+          variants={navBubbles}
           initial="hidden"
           animate="visible"
           transition={{
@@ -230,7 +214,7 @@ export default function Hero() {
           }}
         />
         <motion.div
-          variants={animateTest}
+          variants={navBubbles}
           initial="hidden"
           animate="visible"
           transition={{
@@ -249,7 +233,7 @@ export default function Hero() {
           />
         </motion.div>
         <motion.div
-          variants={animateTest}
+          variants={navBubbles}
           initial="hidden"
           animate="visible"
           transition={{
@@ -268,7 +252,7 @@ export default function Hero() {
           />
         </motion.div>
         <motion.div
-          variants={animateTest}
+          variants={navBubbles}
           initial="hidden"
           animate="visible"
           transition={{

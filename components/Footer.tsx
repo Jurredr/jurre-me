@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import { basicHoverTapScale } from '../lib/AnimationPresets'
 import Logo from './Logo'
 import MaskSvg from './MaskSvg'
 
@@ -8,10 +9,8 @@ const Footer: React.FC = () => {
     <div className="flex justify-between items-center px-8 md:px-16 py-8 font-euclid">
       <div className="footer-left flex justify-center items-center gap-4 md:gap-12 flex-col md:flex-row">
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{
-            duration: 0.2
-          }}
+          whileHover={basicHoverTapScale.hover}
+          transition={{ duration: basicHoverTapScale.duration }}
         >
           <Logo color="black" />
         </motion.div>
@@ -22,11 +21,9 @@ const Footer: React.FC = () => {
       <div className="footer-right flex flex-col md:flex-row justify-center items-center gap-8 md:gap-11 text-black">
         <motion.div
           className="footer-mail flex justify-center items-center gap-2 cursor-pointer"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.05 }}
-          transition={{
-            duration: 0.2
-          }}
+          whileHover={basicHoverTapScale.hover}
+          whileTap={basicHoverTapScale.tap}
+          transition={{ duration: basicHoverTapScale.duration }}
           onClick={(e) => {
             window.location.href =
               "mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
@@ -45,11 +42,9 @@ const Footer: React.FC = () => {
             rel="noreferrer"
             target="_blank"
             className="h-5"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.05 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
@@ -61,11 +56,9 @@ const Footer: React.FC = () => {
             rel="noreferrer"
             target="_blank"
             className="h-5"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.05 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
@@ -77,11 +70,9 @@ const Footer: React.FC = () => {
             rel="noreferrer"
             target="_blank"
             className="h-5"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.05 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
@@ -93,11 +84,9 @@ const Footer: React.FC = () => {
             rel="noreferrer"
             target="_blank"
             className="h-5"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.05 }}
-            transition={{
-              duration: 0.2
-            }}
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
           >
             <MaskSvg
               className="h-5 w-5 cursor-pointer"
