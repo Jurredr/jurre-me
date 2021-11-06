@@ -12,8 +12,15 @@ const SectionIntro: React.FC<Props> = (props) => {
       <div className="bg-jurreorange bg-opacity-[21%] rounded-[30px] px-8 py-1 mb-4">
         <h1 className="text-jurreorange font-medium">{props.sectionName}</h1>
       </div>
-      <h2 className="font-medium text-5xl mb-6">{props.textBig}</h2>
-      <p className="font-light text-2xl">{props.textSmall}</p>
+      <h2
+        className="font-medium text-[2rem] mb-6 md:text-5xl text-center"
+        style={{ lineHeight: '1.2' }}
+      >
+        {props.textBig}
+      </h2>
+      <p className="font-light text-lg text-center md:text-2xl">
+        {props.textSmall}
+      </p>
     </div>
   )
 }
