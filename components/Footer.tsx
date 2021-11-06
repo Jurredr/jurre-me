@@ -14,7 +14,10 @@ const Footer: React.FC = () => {
         >
           <Logo color="black" />
         </motion.div>
-        <p className="text-gray-400 mt-1 text-sm">
+        <p
+          className="text-gray-400 mt-1 text-[0.8rem] text-center"
+          style={{ lineHeight: '1.25rem' }}
+        >
           &#169; 2021 All Rights Reserved
         </p>
       </div>
