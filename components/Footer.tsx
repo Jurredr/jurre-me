@@ -6,15 +6,15 @@ import MaskSvg from './MaskSvg'
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex justify-between items-center px-8 md:px-16 py-8 font-euclid">
-      <div className="footer-left flex justify-center items-center gap-4 md:gap-12 flex-col md:flex-row">
+    <div className="flex justify-between items-center px-8 md:px-16 py-8 font-euclid flex-col md:flex-row">
+      <div className="footer-left flex justify-center items-center gap-4 md:gap-12 flex-row mb-6 md:mb-0">
         <motion.div
           whileHover={basicHoverTapScale.hover}
           transition={{ duration: basicHoverTapScale.duration }}
         >
           <Logo color="black" />
         </motion.div>
-        <p className="text-gray-400 mt-1 md:text-sm">
+        <p className="text-gray-400 mt-1 text-sm">
           &#169; 2021 All Rights Reserved
         </p>
       </div>
