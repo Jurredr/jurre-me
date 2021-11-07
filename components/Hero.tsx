@@ -6,6 +6,7 @@ import {
   navBubbles
 } from '../lib/AnimationPresets'
 import Logo from './Logo'
+import MaskSvg from './MaskSvg'
 
 export default function Hero() {
   return (
@@ -33,7 +34,16 @@ export default function Hero() {
           whileHover={basicHoverTapScale.hover}
           transition={{ duration: basicHoverTapScale.duration }}
         >
-          <Logo color="white" />
+          <div className="sm:hidden">
+            <MaskSvg
+              className="h-5 w-5"
+              url="/icons/logo-icon.svg"
+              color="white"
+            />
+          </div>
+          <div className="hidden sm:block">
+            <Logo color="white" />
+          </div>
         </motion.div>
         <div className="flex justify-center items-center gap-8">
           <motion.p
@@ -63,7 +73,7 @@ export default function Hero() {
         </div>
       </motion.div>
       <div className="flex justify-center items-center noselect pt-12">
-        <motion.div className="text-jurreyellow-light font-freigeistwide font-black pb-92 text-[19vw] tracking-tight flex">
+        <motion.div className="text-jurreyellow-light font-freigeistwide font-black pb-92 text-[22vw] sm:text-[19vw] tracking-tight flex">
           <motion.p
             variants={{
               start: {
@@ -175,7 +185,7 @@ export default function Hero() {
         </motion.div>
       </div>
       <motion.div
-        className="absolute -right-0 -bottom-80 nextimg"
+        className="absolute -right-10 md:right-0 -bottom-80"
         variants={{
           start: {
             y: 600,
@@ -198,7 +208,7 @@ export default function Hero() {
         <img
           src="/jurre-wave.png"
           alt="Jurre 3D character waving"
-          className="!h-[60rem] transform rotate-[18deg]"
+          className="h-[60rem] sm:scale-75 xl:scale-90 2xl:scale-100 object-contain transform rotate-[18deg]"
           draggable="false"
         />
       </motion.div>
