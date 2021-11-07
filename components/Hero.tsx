@@ -208,7 +208,7 @@ export default function Hero() {
         <img
           src="/jurre-wave.png"
           alt="Jurre 3D character waving"
-          className="h-[60rem] sm:scale-75 xl:scale-90 2xl:scale-100 object-contain transform rotate-[18deg]"
+          className="h-[60rem] sm:scale-75 xl:scale-90 2xl:scale-100 object-contain transform rotate-[18deg] noselect"
           draggable="false"
         />
       </motion.div>
