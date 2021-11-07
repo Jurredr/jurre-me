@@ -15,7 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
 
       {/* Custom cursor */}
-      <Cursor />
+      <div className="hidden lg:block">
+        <Cursor />
+      </div>
     </RecoilRoot>
   )
 }
