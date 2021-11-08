@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
       </motion.div>
       <div className="flex justify-center items-center noselect pt-12">
-        <motion.div className="text-jurreyellow-light font-freigeistwide font-black pb-92 text-[22vw] sm:text-[19vw] tracking-tight flex">
+        <motion.div className="text-jurreyellow-light font-freigeistwide font-black pb-92 text-[22vw] sm:text-[19vw] tracking-tight flex cursor-default">
           <motion.p
             variants={{
               start: {

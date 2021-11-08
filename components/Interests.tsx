@@ -6,7 +6,7 @@ const Interests: React.FC = () => {
   const scaledY = useTransform(scrollYProgress, [0, 1], [1, 100])
 
   return (
-    <div className="flex justify-center items-center font-freigeistwide font-black noselect text-[12vw] my-[14.6rem]">
+    <div className="flex justify-center items-center font-freigeistwide font-black noselect text-[12vw] my-[14.6rem] cursor-default">
       <p className="text-jurreyellow write-vertical-left write-orient-upright">
         CODE
       </p>
