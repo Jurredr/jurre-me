@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div className="bg-jurreyellow-dark flex flex-col overflow-hidden relative">
       <motion.div
-        className="flex justify-between px-16 py-8"
+        className="flex justify-between px-4 xs:px-8 sm:px-16 py-8 items-center sm:items-baseline"
         variants={{
           hidden: {
             opacity: 0.5,
@@ -34,9 +34,9 @@ export default function Hero() {
           whileHover={basicHoverTapScale.hover}
           transition={{ duration: basicHoverTapScale.duration }}
         >
-          <div className="sm:hidden">
+          <div className="sm:hidden mb-2">
             <MaskSvg
-              className="h-5 w-5"
+              className="h-8 w-8"
               url="/icons/logo-icon.svg"
               color="white"
             />
@@ -45,7 +45,7 @@ export default function Hero() {
             <Logo color="white" />
           </div>
         </motion.div>
-        <div className="flex justify-center items-center gap-8">
+        <div className="flex justify-center items-center gap-4 sm:gap-8 text-sm sm:text-base">
           <motion.p
             className="text-white cursor-pointer font-medium"
             whileHover={basicHoverTapScaleExtended.hover}
@@ -63,7 +63,7 @@ export default function Hero() {
             Work
           </motion.p>
           <motion.div
-            className="bg-white rounded-[20px] cursor-pointer py-3 px-8"
+            className="bg-white rounded-[20px] cursor-pointer py-3 px-4 sm:px-8 text-center"
             whileHover={basicHoverTapScale.hover}
             whileTap={basicHoverTapScale.tap}
             transition={{ duration: basicHoverTapScale.duration }}
