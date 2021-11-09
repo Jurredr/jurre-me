@@ -212,7 +212,7 @@ export default function Hero() {
           draggable="false"
         />
       </motion.div>
-      <div className="flex flex-col gap-4 absolute bottom-12 left-16">
+      <div className="flex flex-col gap-4 absolute bottom-12 left-12 lg:left-16">
         <motion.div
           className="h-4 w-4 bg-white rounded-full cursor-pointer"
           variants={navBubbles}
