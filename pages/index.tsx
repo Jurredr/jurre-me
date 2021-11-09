@@ -5,10 +5,14 @@ import Interests from '../components/Interests'
 import About from '../components/About'
 import Work from '../components/Work'
 import ChatBubble from '../components/ChatBubble'
+import Cursor from '../components/Cursor'
 
 const Home: NextPage = () => {
   return (
     <div className="relative w-full h-full overflow-hidden">
+      {/* Cursor */}
+      <Cursor />
+
       {/* Chat bubble */}
       <ChatBubble />
 
