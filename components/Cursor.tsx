@@ -7,7 +7,14 @@ const Cursor: React.FC = () => {
   useEffect(() => {
     function handleMouse(e: MouseEvent) {
       if (cursorRef.current && innerCursorRef.current) {
-        const pos = `left: ${e.clientX}px; top: ${e.clientY}px;`
+        const pos = `transform: translate(${e.clientX - 24}px,${
+          e.clientY - 24
+        }px);`
+        const posInner = `transform: translate(${e.clientX - 4}px,${
+          e.clientY - 4
+        }px);`
+
+        // https://stackoverflow.com/questions/59883437/modified-cursor-lags
 
         cursorRef.current.style.cssText =
           pos +
@@ -19,7 +26,7 @@ const Cursor: React.FC = () => {
               : ''
           }`
         innerCursorRef.current.style.cssText =
-          pos +
+          posInner +
           ` ${
             e.type === 'mousedown'
               ? `width: 1rem; height: 1rem;`
@@ -58,14 +65,14 @@ const Cursor: React.FC = () => {
   }, [])
 
   return (
-    <div>
+    <div className="z-50 h-full w-full">
       <div
         ref={cursorRef}
-        className="fixed w-12 h-12 border-black border-2 z-10 rounded-full pointer-events-none duration-150 transform -translate-x-1/2 -translate-y-1/2"
+        className="fixed w-12 h-12 z-50 border-black border-2 rounded-full pointer-events-none cursor_outer"
       />
       <div
         ref={innerCursorRef}
-        className="fixed w-2 h-2 z-10 bg-black rounded-full pointer-events-none duration-100 transform -translate-x-1/2 -translate-y-1/2"
+        className="fixed w-2 h-2 z-50 bg-black rounded-full pointer-events-none cursor_inner"
       />
     </div>
   )

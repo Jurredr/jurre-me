@@ -26,6 +26,9 @@ export default defineConfig({
         jurreblack: '#2A2A2A',
         jurreorange: '#FFA800'
       }
+    },
+    screens: {
+      xs: '320px'
     }
   },
   plugins: []
