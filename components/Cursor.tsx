@@ -1,30 +1,35 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Cursor: React.FC = () => {
   const cursorRef = useRef<HTMLDivElement>(null)
   const innerCursorRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    let mouseX = 0
+    let mouseY = 0
+    let xp = 0
+    let yp = 0
+
     function handleMouse(e: MouseEvent) {
       if (cursorRef.current && innerCursorRef.current) {
-        const pos = `transform: translate(${e.clientX - 24}px,${
-          e.clientY - 24
-        }px);`
+        // const pos = `transform: translate(${e.clientX - 24}px,${
+        //   e.clientY - 24
+        // }px);`
         const posInner = `transform: translate(${e.clientX - 4}px,${
           e.clientY - 4
         }px);`
 
         // https://stackoverflow.com/questions/59883437/modified-cursor-lags
 
-        cursorRef.current.style.cssText =
-          pos +
-          ` ${
-            e.type === 'mousedown'
-              ? `width: 2.5rem; height: 2.5rem;`
-              : e.type === 'mouseup'
-              ? `width: 3rem; height: 3rem;`
-              : ''
-          }`
+        // cursorRef.current.style.cssText =
+        //   pos +
+        //   ` ${
+        //     e.type === 'mousedown'
+        //       ? `width: 2.5rem; height: 2.5rem;`
+        //       : e.type === 'mouseup'
+        //       ? `width: 3rem; height: 3rem;`
+        //       : ''
+        //   }`
         innerCursorRef.current.style.cssText =
           posInner +
           ` ${
@@ -34,8 +39,25 @@ const Cursor: React.FC = () => {
               ? `width: 0.5rem; height: 0.5rem;`
               : ''
           }`
+
+        mouseX = e.clientX - 10
+        mouseY = e.clientY - 10
       }
     }
+
+    setInterval(() => {
+      if (cursorRef.current && innerCursorRef.current) {
+        xp += (mouseX - xp) / 6
+        yp += (mouseY - yp) / 6
+
+        cursorRef.current.style.cssText =
+          'transform: translateX(' +
+          (xp - 15) +
+          'px) translateY(' +
+          (yp - 15) +
+          'px)'
+      }
+    }, 10)
 
     // Mouse move
     window.addEventListener('mousemove', (e) => handleMouse(e), false)
