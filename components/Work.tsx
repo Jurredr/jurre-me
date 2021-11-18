@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { Controller, Scene } from 'react-scrollmagic'
 import { basicHoverTapScale } from '../lib/AnimationPresets'
+import MaskSvg from './MaskSvg'
 import SectionIntro from './SectionIntro'
 
 const Work: React.FC = () => {
@@ -64,12 +65,16 @@ const Work: React.FC = () => {
             </div>
             <div className="bg-orange-100 rounded-4xl h-2/3 w-2/5 mr-16 flex justify-end items-end">
               <motion.div
-                className="bg-white rounded-2xl cursor-pointer py-4 px-4 text-center w-38 m-10"
+                className="bg-white rounded-2xl cursor-pointer py-4 px-4 text-center w-38 m-10 flex justify-center items-center gap-3"
                 whileHover={basicHoverTapScale.hover}
                 whileTap={basicHoverTapScale.tap}
                 transition={{ duration: basicHoverTapScale.duration }}
               >
                 <p className="font-euclid font-medium noselect">Check out</p>
+                <MaskSvg
+                  className="h-[0.65rem] w-[0.65rem] mt-[2px]"
+                  url="/icons/arrow-tr.svg"
+                />
               </motion.div>
             </div>
           </div>
