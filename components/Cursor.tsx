@@ -17,15 +17,6 @@ const Cursor: React.FC = () => {
           e.clientY - 4
         }px)`
 
-        // cursorRef.current.style.cssText =
-        //   pos +
-        //   ` ${
-        //     e.type === 'mousedown'
-        //       ? `width: 2.5rem; height: 2.5rem;`
-        //       : e.type === 'mouseup'
-        //       ? `width: 3rem; height: 3rem;`
-        //       : ''
-        //   }`
         innerCursorRef.current.style.cssText =
           posInner +
           ` ${
