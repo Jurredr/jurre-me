@@ -80,7 +80,7 @@ const Cursor: React.FC = () => {
   }, [])
 
   return (
-    <div className="hidden z-50 h-full w-full xl:block flex">
+    <div className="hidden z-50 h-full w-full xl:block">
       <div
         ref={cursorRef}
         className="fixed w-12 h-12 z-50 border-black border-2 rounded-full pointer-events-none"
