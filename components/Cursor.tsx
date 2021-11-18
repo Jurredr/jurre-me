@@ -9,17 +9,13 @@ const Cursor: React.FC = () => {
     let mouseY = 0
     let xp = 0
     let yp = 0
+    let type = 'mouseup'
 
     function handleMouse(e: MouseEvent) {
       if (cursorRef.current && innerCursorRef.current) {
-        // const pos = `transform: translate(${e.clientX - 24}px,${
-        //   e.clientY - 24
-        // }px);`
         const posInner = `transform: translate(${e.clientX - 4}px,${
           e.clientY - 4
-        }px);`
-
-        // https://stackoverflow.com/questions/59883437/modified-cursor-lags
+        }px)`
 
         // cursorRef.current.style.cssText =
         //   pos +
@@ -34,14 +30,15 @@ const Cursor: React.FC = () => {
           posInner +
           ` ${
             e.type === 'mousedown'
-              ? `width: 1rem; height: 1rem;`
+              ? ` scale(1.4);`
               : e.type === 'mouseup'
-              ? `width: 0.5rem; height: 0.5rem;`
-              : ''
+              ? ` scale(1.0);`
+              : ';'
           }`
 
         mouseX = e.clientX - 10
         mouseY = e.clientY - 10
+        type = e.type
       }
     }
 
@@ -52,10 +49,15 @@ const Cursor: React.FC = () => {
 
         cursorRef.current.style.cssText =
           'transform: translateX(' +
-          (xp - 15) +
+          (xp - 14.5) +
           'px) translateY(' +
-          (yp - 15) +
-          'px)'
+          (yp - 14.5) +
+          'px)' +
+          (type === 'mousedown'
+            ? ` scale(0.9);`
+            : type === 'mouseup'
+            ? ` scale(1.0);`
+            : ';')
       }
     }, 10)
 
@@ -87,7 +89,7 @@ const Cursor: React.FC = () => {
   }, [])
 
   return (
-    <div className="hidden z-50 h-full w-full xl:block">
+    <div className="hidden z-50 h-full w-full xl:block flex">
       <div
         ref={cursorRef}
         className="fixed w-12 h-12 z-50 border-black border-2 rounded-full pointer-events-none cursor_outer"
