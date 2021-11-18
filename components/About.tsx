@@ -6,6 +6,7 @@ import {
 } from 'framer-motion'
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import { Controller, Scene } from 'react-scrollmagic'
 import SectionIntro from './SectionIntro'
 
 const About: React.FC = () => {
@@ -14,9 +15,6 @@ const About: React.FC = () => {
     threshold: 1,
     triggerOnce: true
   })
-
-  const { scrollYProgress } = useViewportScroll()
-  const scaledY = useTransform(scrollYProgress, [0, 1], [0.7, 2.12])
 
   useEffect(() => {
     if (introInView) {
@@ -44,10 +42,11 @@ const About: React.FC = () => {
           textSmall="Welcome to my world. Get to know me :)"
         />
       </motion.div>
-      <motion.div
-        className="w-[89%] h-[120rem] mt-25 bg-jurremagenta rounded-[40px]"
-        style={{ scaleX: scaledY }}
-      ></motion.div>
+      <Controller>
+        <Scene triggerHook="onLeave" duration={1000} pin>
+          <div className="w-[89%] h-screen mt-25 bg-jurremagenta rounded-[40px]"></div>
+        </Scene>
+      </Controller>
     </div>
   )
 }
