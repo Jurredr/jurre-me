@@ -17,7 +17,7 @@ const WorkCard: React.FC<Props> = (props) => {
       </div>
       <div className="flex font-euclid text-lg gap-2 mt-4">
         {props.languages.map((item, index) => {
-          return <LanguageFlair key={index} name={item[0]} color={item[1]} />
+          return <LanguageFlair key={index} name={item[0]} />
         })}
       </div>
     </div>

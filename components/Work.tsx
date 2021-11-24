@@ -58,10 +58,7 @@ const Work: React.FC = () => {
                   <WorkCard
                     name="Cashew"
                     title="Personal finance platform[split]for budgeting and overview"
-                    languages={[
-                      ['JavaScript', 'orange'],
-                      ['Vue', 'teal']
-                    ]}
+                    languages={[['JavaScript'], ['Vue']]}
                   />
                 </div>
                 <div
@@ -73,11 +70,7 @@ const Work: React.FC = () => {
                   <WorkCard
                     name="Glassdown"
                     title="Modern & Fast transparent[split]Markdown editor."
-                    languages={[
-                      ['TypeScript', 'blue'],
-                      ['React', 'cyan'],
-                      ['Electron', 'violet']
-                    ]}
+                    languages={[['TypeScript'], ['React'], ['Electron']]}
                   />
                 </div>
               </div>
