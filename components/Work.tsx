@@ -4,6 +4,7 @@ import { Controller, Scene } from 'react-scrollmagic'
 import { basicHoverTapScale } from '../lib/AnimationPresets'
 import MaskSvg from './MaskSvg'
 import SectionIntro from './SectionIntro'
+import WorkCard from './WorkCard'
 
 const Work: React.FC = () => {
   return (
@@ -15,69 +16,87 @@ const Work: React.FC = () => {
       />
       <Controller>
         <Scene triggerHook="onLeave" duration={1000} pin>
-          <div className="w-full h-screen mt-36 rounded-[40px] bg-gradient-to-br from-red-300 to-yellow-300 flex justify-between items-center">
-            <div className="flex items-center w-1/2 ml-16 gap-22">
-              <div className="flex flex-col gap-4">
-                <motion.div className="h-4 w-4 bg-white rounded-full cursor-pointer" />
-                <motion.div
-                  className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 1.1 }}
-                  transition={{
-                    delay: 0,
-                    duration: 0.15
-                  }}
-                />
-                <motion.div
-                  className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 1.1 }}
-                  transition={{
-                    delay: 0,
-                    duration: 0.15
-                  }}
-                />
-                <motion.div
-                  className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 1.1 }}
-                  transition={{
-                    delay: 0,
-                    duration: 0.15
-                  }}
-                />
+          {(progress: number) => (
+            <div className="w-full h-screen mt-36 rounded-[40px] bg-gradient-to-br from-red-300 to-yellow-300 flex justify-between items-center">
+              <div className="flex items-center w-1/2 ml-16 gap-22">
+                <div className="flex flex-col gap-4">
+                  <motion.div className="h-4 w-4 bg-white rounded-full cursor-pointer" />
+                  <motion.div
+                    className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
+                    whileHover={{ scale: 1.3 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{
+                      delay: 0,
+                      duration: 0.15
+                    }}
+                  />
+                  <motion.div
+                    className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
+                    whileHover={{ scale: 1.3 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{
+                      delay: 0,
+                      duration: 0.15
+                    }}
+                  />
+                  <motion.div
+                    className="h-4 w-4 border-white border-solid border-2 rounded-full cursor-pointer"
+                    whileHover={{ scale: 1.3 }}
+                    whileTap={{ scale: 1.1 }}
+                    transition={{
+                      delay: 0,
+                      duration: 0.15
+                    }}
+                  />
+                </div>
+                <div
+                  className={`transition duration-200 ${
+                    progress > 0.5 ? 'opacity-0' : 'opacity-100'
+                  }`}
+                  hidden={progress > 0.55}
+                >
+                  <WorkCard
+                    name="Cashew"
+                    title="Personal finance platform[split]for budgeting and overview"
+                    languages={[
+                      ['JavaScript', 'orange'],
+                      ['Vue', 'teal']
+                    ]}
+                  />
+                </div>
+                <div
+                  className={`transition duration-200 ${
+                    progress <= 0.5 ? 'opacity-0' : 'opacity-100'
+                  }`}
+                  hidden={progress <= 0.55}
+                >
+                  <WorkCard
+                    name="Glassdown"
+                    title="Modern & Fast transparent[split]Markdown editor."
+                    languages={[
+                      ['TypeScript', 'blue'],
+                      ['React', 'cyan'],
+                      ['Electron', 'violet']
+                    ]}
+                  />
+                </div>
               </div>
-              <div className="flex flex-col text-white gap-7">
-                <p className="font-euclid font-medium text-2xl">Cashew</p>
-                <div className="font-freigeist font-bold text-5xl flex flex-col gap-4">
-                  <p>Personal finance platform</p>
-                  <p>for budgeting and overview</p>
-                </div>
-                <div className="flex font-euclid text-lg gap-2 mt-4">
-                  <p className="bg-orange-100 text-orange-400 px-5 py-[0.35rem] rounded-full">
-                    JavaScript
-                  </p>
-                  <p className="bg-teal-100 text-teal-400 px-5 py-[0.35rem] rounded-full">
-                    Vue
-                  </p>
-                </div>
+              <div className="bg-orange-100 rounded-4xl h-2/3 w-2/5 mr-16 flex justify-end items-end">
+                <motion.div
+                  className="bg-white rounded-2xl cursor-pointer py-4 px-4 text-center w-38 m-10 flex justify-center items-center gap-3"
+                  whileHover={basicHoverTapScale.hover}
+                  whileTap={basicHoverTapScale.tap}
+                  transition={{ duration: basicHoverTapScale.duration }}
+                >
+                  <p className="font-euclid font-medium noselect">Check out</p>
+                  <MaskSvg
+                    className="h-[0.65rem] w-[0.65rem] mt-[2px]"
+                    url="/icons/arrow-tr.svg"
+                  />
+                </motion.div>
               </div>
             </div>
-            <div className="bg-orange-100 rounded-4xl h-2/3 w-2/5 mr-16 flex justify-end items-end">
-              <motion.div
-                className="bg-white rounded-2xl cursor-pointer py-4 px-4 text-center w-38 m-10 flex justify-center items-center gap-3"
-                whileHover={basicHoverTapScale.hover}
-                whileTap={basicHoverTapScale.tap}
-                transition={{ duration: basicHoverTapScale.duration }}
-              >
-                <p className="font-euclid font-medium noselect">Check out</p>
-                <MaskSvg
-                  className="h-[0.65rem] w-[0.65rem] mt-[2px]"
-                  url="/icons/arrow-tr.svg"
-                />
-              </motion.div>
-            </div>
-          </div>
+          )}
         </Scene>
       </Controller>
     </div>
