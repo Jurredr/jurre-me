@@ -17,7 +17,14 @@ const Work: React.FC = () => {
       <Controller>
         <Scene triggerHook="onLeave" duration={1000} pin>
           {(progress: number) => (
-            <div className="w-full h-screen mt-36 rounded-[40px] bg-gradient-to-br from-red-300 to-yellow-300 flex justify-between items-center">
+            <div
+              className={
+                `w-full h-screen mt-36 rounded-[40px] flex justify-between items-center ` +
+                (progress > 0.55
+                  ? `bg-gradient-to-br from-red-300 to-blue-300`
+                  : `bg-gradient-to-br from-red-300 to-yellow-300`)
+              }
+            >
               <div className="flex items-center w-1/2 ml-16 gap-22">
                 <div className="flex flex-col gap-4">
                   <motion.div className="h-4 w-4 bg-white rounded-full cursor-pointer" />
