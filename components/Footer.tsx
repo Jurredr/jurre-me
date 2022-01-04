@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           className="text-gray-400 mt-1 text-[0.8rem] text-center"
           style={{ lineHeight: '1.25rem' }}
         >
-          &#169; 2021 All Rights Reserved
+          &#169; {new Date().getFullYear()} All Rights Reserved
         </p>
       </div>
       <div className="footer-right flex flex-col md:flex-row justify-center items-center gap-8 md:gap-11 text-black">
