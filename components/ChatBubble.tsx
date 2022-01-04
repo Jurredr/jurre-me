@@ -31,7 +31,7 @@ const ChatBubble: React.FC = () => {
 
   return (
     <motion.div
-      className="h-14 w-14 md:h-16 md:w-16 bg-jurreblack rounded-full fixed z-10 bottom-8 right-8 md:right-16 cursor-pointer flex justify-center items-center"
+      className="h-14 w-14 md:h-16 md:w-16 bg-jurreblack rounded-full fixed z-30 bottom-8 right-8 md:right-16 cursor-pointer flex justify-center items-center"
       animate={controls}
       initial="hidden"
       exit="hidden"
