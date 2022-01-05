@@ -10,7 +10,7 @@ import MaskSvg from './MaskSvg'
 
 export default function Hero() {
   return (
-    <div className="bg-jurreyellow-dark flex flex-col overflow-hidden relative">
+    <div className="bg-jurreyellow-dark flex flex-col overflow-hidden relative h-screen">
       <motion.div
         className="flex justify-between px-4 xs:px-8 sm:px-16 py-8 items-center sm:items-baseline"
         variants={{
