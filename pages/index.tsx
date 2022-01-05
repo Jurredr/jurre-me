@@ -6,6 +6,7 @@ import About from '../components/About'
 import Work from '../components/Work'
 import ChatBubble from '../components/ChatBubble'
 import Cursor from '../components/Cursor'
+import NewsBar from '../components/NewsBar'
 
 const Home: NextPage = () => {
   return (
@@ -14,14 +15,7 @@ const Home: NextPage = () => {
       <Cursor />
 
       {/* News bar */}
-      <div className="bg-jurremagenta top-0 z-20 w-full flex justify-center items-center py-3">
-        <p className="text-white font-semibold text-base md:text-lg text-center">
-          🤖 Hey there!{' '}
-          <span className="font-normal">
-            Please note that my site is still heavily under maintenance.
-          </span>
-        </p>
-      </div>
+      <NewsBar />
 
       {/* Chat bubble */}
       <ChatBubble />
