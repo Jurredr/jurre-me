@@ -47,6 +47,7 @@ const About: React.FC = () => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: -50 }
         }}
+        className="mb-25"
       >
         <SectionIntro
           sectionName="About"
@@ -58,7 +59,7 @@ const About: React.FC = () => {
         <Controller>
           <Scene triggerHook="onLeave" duration={1000} pin>
             <motion.div
-              className="w-screen h-screen mt-25 bg-jurremagenta"
+              className="w-screen h-screen bg-jurremagenta"
               style={{ scaleX: scaledY, borderRadius: borderY }}
             ></motion.div>
           </Scene>

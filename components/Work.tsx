@@ -9,17 +9,19 @@ import WorkCard from './WorkCard'
 const Work: React.FC = () => {
   return (
     <div className="mb-[14.6rem] flex justify-center items-center flex-col">
-      <SectionIntro
-        sectionName="Projects"
-        textBig="A highlight reel of work"
-        textSmall="Check out some of my latest projects!"
-      />
+      <div className="mb-36">
+        <SectionIntro
+          sectionName="Projects"
+          textBig="A highlight reel of work"
+          textSmall="Check out some of my latest projects!"
+        />
+      </div>
       <Controller>
         <Scene triggerHook="onLeave" duration={1000} pin>
           {(progress: number) => (
             <div
               className={
-                `w-full h-screen mt-36 rounded-[40px] flex justify-between items-center ` +
+                `w-full h-screen rounded-[40px] flex justify-between items-center ` +
                 (progress > 0.55
                   ? `bg-gradient-to-br from-red-300 to-blue-300`
                   : `bg-gradient-to-br from-red-300 to-yellow-300`)
