@@ -6,4 +6,4 @@
   </a>
 </p>
 
-Jurre.me is my personal website, built with NextJS.
+> Jurre.me is my personal website, built with NextJS.
