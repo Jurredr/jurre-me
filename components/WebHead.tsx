@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import React from 'react'
+import getMyCurrentAge from '../lib/Age'
 
 const WebHead: React.FC = () => {
+  const age = getMyCurrentAge()
+
   return (
     <Head>
       {/* Base configuration */}
@@ -13,12 +16,16 @@ const WebHead: React.FC = () => {
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
       <meta
         name="description"
-        content="Jurre de Ruiter is an ambitious 19 y/o developer, Computer Science student, and content creator from The Netherlands."
+        content={
+          'Jurre de Ruiter is an ambitious' +
+          age +
+          'y/o developer, Computer Science student, and content creator from The Netherlands.'
+        }
       />
       <meta
         name="keywords"
-        content="Jurre de Ruiter, Jurre, portfolio, developer, software, web, react, typescript, vue, full stack,
-        html, css, javascript, university, student, work, projects, 3D"
+        content="Jurre de Ruiter, Jurre, portfolio, developer, dev, software, web, react, typescript, vue, full stack,
+        html, css, javascript, university, student, 3D"
       />
       <meta name="subject" content="Portfolio" />
       <meta name="copyright" content="Jurre" />
@@ -34,7 +41,11 @@ const WebHead: React.FC = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Jurre de Ruiter is an ambitious 19 y/o developer, Computer Science student, and content creator from The Netherlands."
+        content={
+          'Jurre de Ruiter is an ambitious' +
+          age +
+          'y/o developer, Computer Science student, and content creator from The Netherlands.'
+        }
       />
       <meta property="og:image" content="/web-banner.png" />
       <meta property="og:image:url" content="/web-banner.png" />
@@ -48,7 +59,11 @@ const WebHead: React.FC = () => {
       <meta name="twitter:title" content="Jurre.me" />
       <meta
         name="twitter:description"
-        content="Jurre de Ruiter is an ambitious 19 y/o developer, Computer Science student, and content creator from The Netherlands."
+        content={
+          'Jurre de Ruiter is an ambitious' +
+          age +
+          'y/o developer, Computer Science student, and content creator from The Netherlands.'
+        }
       />
       <meta name="twitter:image" content="/web-banner.png" />
       <meta name="twitter:site" content="@JurredeRuiter" />
