@@ -4,7 +4,7 @@ const NewsBar: React.FC = () => {
       <p className="text-white font-semibold text-base md:text-lg text-center">
         🤖 Hey there!{' '}
         <span className="font-normal">
-          Please note that my site is still heavily under maintenance.
+          Please note that my site is still heavily under construction.
         </span>
       </p>
     </div>
