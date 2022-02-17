@@ -26,6 +26,7 @@ const WebHead: React.FC = () => {
       <meta name="robots" content="index,follow" />
       <meta name="url" content="https://www.jurre.me" />
       <meta name="identifier-URL" content="https://www.jurre.me" />
+      <meta name="theme-color" content="#FFC532" />
       <link rel="canonical" href="https://www.jurre.me" />
 
       {/* OpenGraph tags */}
