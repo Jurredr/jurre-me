@@ -17,9 +17,9 @@ const WebHead: React.FC = () => {
       <meta
         name="description"
         content={
-          'Jurre de Ruiter is an ambitious' +
+          'Jurre de Ruiter is an ambitious ' +
           age +
-          'y/o developer, Computer Science student, and content creator from The Netherlands.'
+          ' y/o developer, Computer Science student, and content creator from The Netherlands.'
         }
       />
       <meta
@@ -42,9 +42,9 @@ const WebHead: React.FC = () => {
       <meta
         property="og:description"
         content={
-          'Jurre de Ruiter is an ambitious' +
+          'Jurre de Ruiter is an ambitious ' +
           age +
-          'y/o developer, Computer Science student, and content creator from The Netherlands.'
+          ' y/o developer, Computer Science student, and content creator from The Netherlands.'
         }
       />
       <meta property="og:image" content="/web-banner.png" />
@@ -60,9 +60,9 @@ const WebHead: React.FC = () => {
       <meta
         name="twitter:description"
         content={
-          'Jurre de Ruiter is an ambitious' +
+          'Jurre de Ruiter is an ambitious ' +
           age +
-          'y/o developer, Computer Science student, and content creator from The Netherlands.'
+          ' y/o developer, Computer Science student, and content creator from The Netherlands.'
         }
       />
       <meta name="twitter:image" content="/web-banner.png" />
