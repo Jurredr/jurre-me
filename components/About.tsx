@@ -59,9 +59,15 @@ const About: React.FC = () => {
         <Controller>
           <Scene triggerHook="onLeave" duration={1000} pin>
             <motion.div
-              className="w-screen h-screen bg-jurremagenta"
+              className="w-screen h-screen bg-jurremagenta flex justify-center items-center"
               style={{ scaleX: scaledY, borderRadius: borderY }}
-            ></motion.div>
+            >
+              <div className="flex justify-center items-center">
+                <p className="text-white text-3xl font-euclid">
+                  Soon there will be an epic animation here (:
+                </p>
+              </div>
+            </motion.div>
           </Scene>
         </Controller>
       </div>
