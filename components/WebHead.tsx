@@ -47,9 +47,15 @@ const WebHead: React.FC = () => {
           ' y/o developer, Computer Science student, and content creator from The Netherlands.'
         }
       />
-      <meta property="og:image" content="/web-banner.png" />
-      <meta property="og:image:url" content="/web-banner.png" />
-      <meta property="og:image:secure_url" content="/web-banner.png" />
+      <meta property="og:image" content="https://www.jurre.me/web-banner.png" />
+      <meta
+        property="og:image:url"
+        content="https://www.jurre.me/web-banner.png"
+      />
+      <meta
+        property="og:image:secure_url"
+        content="https://www.jurre.me/web-banner.png"
+      />
       <meta property="og:url" content="https://www.jurre.me" />
       <meta property="og:site_name" content="Jurre.me" />
       <meta property="og:email" content="contact@jurre.me" />
@@ -65,7 +71,10 @@ const WebHead: React.FC = () => {
           ' y/o developer, Computer Science student, and content creator from The Netherlands.'
         }
       />
-      <meta name="twitter:image" content="/web-banner.png" />
+      <meta
+        name="twitter:image"
+        content="https://www.jurre.me/web-banner.png"
+      />
       <meta name="twitter:site" content="@JurredeRuiter" />
       <meta name="twitter:creator" content="@JurredeRuiter" />
     </Head>
