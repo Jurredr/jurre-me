@@ -2,6 +2,10 @@
 @import 'fonts/fonts.freigeist-regular.scss';
 @import 'fonts/fonts.freigeist-wide.scss';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
