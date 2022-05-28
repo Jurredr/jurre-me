@@ -3,7 +3,7 @@ import LanguageFlair from './LanguageFlair'
 interface Props {
   name: string
   title: string
-  languages: string[][]
+  languages: string[]
 }
 
 const WorkCard: React.FC<Props> = (props) => {
@@ -17,7 +17,7 @@ const WorkCard: React.FC<Props> = (props) => {
       </div>
       <div className="flex font-euclid text-lg gap-2 mt-4">
         {props.languages.map((item, index) => {
-          return <LanguageFlair key={index} name={item[0]} />
+          return <LanguageFlair key={index} name={item} />
         })}
       </div>
     </div>

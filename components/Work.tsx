@@ -2,11 +2,15 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { Controller, Scene } from 'react-scrollmagic'
 import { basicHoverTapScale } from '../lib/AnimationPresets'
+import ProjectsData from '../lib/Projects'
+import Project from '../types/Project'
 import MaskSvg from './MaskSvg'
 import SectionIntro from './SectionIntro'
 import WorkCard from './WorkCard'
 
 const Work: React.FC = () => {
+  // const projects: Project[] = ProjectsData
+
   return (
     <div className="mb-[14.6rem] flex justify-center items-center flex-col">
       <div className="mb-36">
@@ -67,7 +71,7 @@ const Work: React.FC = () => {
                   <WorkCard
                     name="Cashew"
                     title="Personal finance platform[split]for budgeting and overview"
-                    languages={[['JavaScript'], ['Vue']]}
+                    languages={['JavaScript', 'Vue']}
                   />
                 </div>
                 <div
@@ -79,7 +83,7 @@ const Work: React.FC = () => {
                   <WorkCard
                     name="Glassdown"
                     title="Modern & Fast transparent[split]Markdown editor."
-                    languages={[['TypeScript'], ['React'], ['Electron']]}
+                    languages={['TypeScript', 'React', 'Electron']}
                   />
                 </div>
               </div>
