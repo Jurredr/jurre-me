@@ -15,11 +15,11 @@ const NavBar: React.FC = () => {
       </div>
       <div className="flex items-center justify-center gap-3">
         <div className="flex gap-2 rounded-xl bg-jurregray p-2 font-semibold dark:bg-jurredarklight">
-          <a className="cursor-pointer rounded-lg bg-white p-1 dark:bg-jurredark">
+          <a className="cursor-pointer rounded-lg bg-white py-1 px-2 dark:bg-jurredark">
             Home
           </a>
-          <a className="cursor-pointer p-1">About</a>
-          <a className="cursor-pointer p-1">Portfolio</a>
+          <a className="cursor-pointer py-1 px-2">About</a>
+          <a className="cursor-pointer py-1 px-2">Portfolio</a>
         </div>
         <div className="cursor-pointer">
           <div

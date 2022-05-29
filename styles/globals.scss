@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+p {
+  @apply font-euclid
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
