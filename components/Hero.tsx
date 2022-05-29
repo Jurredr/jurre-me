@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       </h2>
       <div className="border-l-[0.4rem] border-l-jurreyellow pl-4 text-3xl font-light leading-[1.3]">
         <p className="whitespace-nowrap">
-          <span className="font-medium">Heyo</span>, I’m Jurre de Ruiter!
+          <span className="font-medium">Heyo</span>, I&rsquo;m Jurre de Ruiter!
         </p>
         <p className="whitespace-nowrap">I code stuff. 🤓</p>
       </div>
