@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
       <div className="hidden dark:hidden sm:block">
         <Logo color="black" />
       </div>
-      <div className="hidden dark:block sm:block">
+      <div className="hidden dark:sm:block">
         <Logo color="white" />
       </div>
       <div className="flex items-center justify-center gap-3">
