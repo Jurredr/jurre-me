@@ -6,15 +6,19 @@ const NavBar: React.FC = () => {
   const { setTheme } = useTheme()
 
   return (
-    <div className="flex items-center justify-between py-8 px-8 lg:px-32 xl:px-48">
-      <div className="dark:hidden">
+    <div className="flex items-center justify-between gap-2 py-8 px-6 lg:px-32 xl:px-48">
+      <MaskSvg
+        className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white sm:hidden"
+        url="/icons/logo-icon.svg"
+      />
+      <div className="hidden dark:hidden sm:block">
         <Logo color="black" />
       </div>
-      <div className="hidden dark:block">
+      <div className="hidden dark:block sm:block">
         <Logo color="white" />
       </div>
       <div className="flex items-center justify-center gap-3">
-        <div className="flex gap-2 rounded-xl bg-jurregray p-2 font-semibold dark:bg-jurredarklight">
+        <div className="flex gap-1 rounded-xl bg-jurregray p-2 font-semibold tracking-wide dark:bg-jurredarklight">
           <a className="cursor-pointer rounded-lg bg-white py-1 px-2 dark:bg-jurredark">
             Home
           </a>
