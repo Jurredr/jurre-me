@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="cursor-pointer dark:hidden">
           <Logo color="black" />
         </div>
-        <div className="light:hidden cursor-pointer">
+        <div className="hidden cursor-pointer dark:block">
           <Logo color="white" />
         </div>
         <p
