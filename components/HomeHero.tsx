@@ -1,4 +1,4 @@
-const Hero: React.FC = () => {
+const HomeHero: React.FC = () => {
   return (
     <div className="mt-28 mb-28 flex flex-col items-end px-8 lg:px-32 xl:px-48">
       <h1 className="noselect self-center whitespace-nowrap font-freigeistwide text-[23rem] font-black leading-[10.8rem] tracking-[-0.07em] text-jurreyellow">
@@ -17,4 +17,4 @@ const Hero: React.FC = () => {
   )
 }
 
-export default Hero
+export default HomeHero
