@@ -1,5 +1,9 @@
 {
+  "name": "jurre-me",
+  "version": "2.0.0",
   "private": true,
+  "author": "Jurre de Ruiter",
+  "description": "[👨‍💻] Jurre.me is my personal portfolio website.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
