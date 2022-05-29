@@ -97,7 +97,7 @@ const Cursor: React.FC = () => {
       <div ref={cursorRef} className="pointer-events-none fixed z-50 h-12 w-12">
         <div
           ref={cursorScaleRef}
-          className="z-50 h-12 w-12 rounded-full border-2 border-black transition-transform duration-75"
+          className="z-50 h-12 w-12 rounded-full border-2 border-black transition-transform duration-75 dark:border-white"
         />
       </div>
 
@@ -107,7 +107,7 @@ const Cursor: React.FC = () => {
       >
         <div
           ref={innerCursorScaleRef}
-          className="z-50 h-2 w-2 rounded-full bg-black transition-transform duration-75"
+          className="z-50 h-2 w-2 rounded-full bg-black transition-transform duration-75 dark:bg-white"
         />
       </div>
     </div>
