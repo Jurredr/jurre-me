@@ -19,7 +19,7 @@ export const NavBar = memo<Props>(({ routes }) => {
     <div className="flex items-center justify-between gap-2 py-8 px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
       <MaskSvg
         className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white sm:hidden"
-        url="/icons/logo-icon.svg"
+        url="/img/icons/logo-icon.svg"
       />
       <div className="hidden dark:hidden sm:block">
         <Logo color="black" />
@@ -52,13 +52,17 @@ export const NavBar = memo<Props>(({ routes }) => {
             className="rounded-2xl bg-jurregray p-4 dark:hidden"
             onClick={() => setTheme('dark')}
           >
-            <MaskSvg className="h-4 w-4" url="/icons/moon.svg" />
+            <MaskSvg className="h-4 w-4" url="/img/icons/moon.svg" />
           </div>
           <div
             className="hidden rounded-2xl bg-jurredarklight p-4 dark:block"
             onClick={() => setTheme('light')}
           >
-            <MaskSvg className="h-4 w-4" url="/icons/sun.svg" color="white" />
+            <MaskSvg
+              className="h-4 w-4"
+              url="/img/icons/sun.svg"
+              color="white"
+            />
           </div>
         </div>
       </div>

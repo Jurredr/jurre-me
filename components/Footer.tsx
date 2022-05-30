@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         >
           <MaskSvg
             className="mt-[0.1rem] h-4 w-4 dark:!bg-white"
-            url="/icons/mail.svg"
+            url="/img/icons/mail.svg"
           />
           <p className="text-black dark:text-white">contact@jurre.me</p>
         </div>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
           >
             <MaskSvg
               className="h-5 w-5 cursor-alias dark:!bg-white"
-              url="/icons/instagram.svg"
+              url="/img/icons/instagram.svg"
             />
           </a>
           <a
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
           >
             <MaskSvg
               className="h-5 w-5 cursor-alias dark:!bg-white"
-              url="/icons/twitter.svg"
+              url="/img/icons/twitter.svg"
             />
           </a>
           <a
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
           >
             <MaskSvg
               className="h-5 w-5 cursor-alias dark:!bg-white"
-              url="/icons/github.svg"
+              url="/img/icons/github.svg"
             />
           </a>
           <a
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
           >
             <MaskSvg
               className="h-5 w-5 cursor-alias dark:!bg-white"
-              url="/icons/linkedin.svg"
+              url="/img/icons/linkedin.svg"
             />
           </a>
         </div>

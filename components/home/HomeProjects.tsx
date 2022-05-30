@@ -13,7 +13,7 @@ const HomeProjects: React.FC = () => {
         <p className="text-white">Check all</p>
         <MaskSvg
           className="h-[0.65rem] w-[0.65rem]"
-          url="/icons/arrow-tr.svg"
+          url="/img/icons/arrow-tr.svg"
           color="white"
         />
       </button>
