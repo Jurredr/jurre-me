@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
 import Cursor from '../components/Cursor'
 import Footer from '../components/Footer'
-import HomeAbout from '../components/HomeAbout'
-import HomeHero from '../components/HomeHero'
+import HomeAbout from '../components/home/HomeAbout'
+import HomeHero from '../components/home/HomeHero'
+import HomeProjects from '../components/home/HomeProjects'
+import HomeToolScroller from '../components/home/HomeToolScroller'
 import NavBar from '../components/NavBar'
 
 const Home: NextPage = () => {
@@ -12,6 +14,8 @@ const Home: NextPage = () => {
       <NavBar />
       <HomeHero />
       <HomeAbout />
+      <HomeToolScroller />
+      <HomeProjects />
       <Footer />
     </div>
   )

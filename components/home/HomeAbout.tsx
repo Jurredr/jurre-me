@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const HomeAbout: React.FC = () => {
   return (
-    <div className="my-48 flex flex-col items-center justify-center">
+    <div className="my-44 flex flex-col items-center justify-center">
       <div className="mb-20 flex flex-col items-center justify-center">
         <h1 className="whitespace-nowrap font-freigeistwide text-[9rem] font-black leading-[1] tracking-[-0.07em]">
           Hi!
