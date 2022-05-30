@@ -12,7 +12,7 @@ export const Layout = memo<Props>(({ children }) => {
   return (
     <>
       <Cursor />
-      <div className="relative h-full w-full overflow-hidden bg-white dark:bg-jurredark">
+      <div className="relative h-full w-full overflow-hidden bg-white transition-colors duration-300 dark:bg-jurredark">
         <header>
           <NavBar routes={routes} />
         </header>
