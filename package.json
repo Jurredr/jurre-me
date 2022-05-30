@@ -10,11 +10,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/react-scroll": "^1.8.3",
     "framer-motion": "^6.3.4",
     "next": "latest",
     "next-themes": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-scroll": "^1.8.7",
     "sass": "^1.52.1"
   },
   "devDependencies": {

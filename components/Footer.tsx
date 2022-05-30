@@ -1,3 +1,4 @@
+import { animateScroll } from 'react-scroll'
 import Logo from './Logo'
 import MaskSvg from './MaskSvg'
 
@@ -5,10 +6,16 @@ const Footer: React.FC = () => {
   return (
     <div className="bg flex flex-col items-center justify-between bg-jurreoffwhite py-14 px-8 font-euclid dark:bg-jurredarklight md:flex-row mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
       <div className="mb-6 flex flex-row items-center justify-center gap-4 md:mb-0 md:gap-12">
-        <div className="cursor-pointer dark:hidden">
+        <div
+          className="cursor-pointer dark:hidden"
+          onClick={() => animateScroll.scrollToTop()}
+        >
           <Logo color="black" />
         </div>
-        <div className="hidden cursor-pointer dark:block">
+        <div
+          className="hidden cursor-pointer dark:block"
+          onClick={() => animateScroll.scrollToTop()}
+        >
           <Logo color="white" />
         </div>
         <p
