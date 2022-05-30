@@ -88,7 +88,9 @@ export const SEO = memo<Props>(
           />
         ) : null}
         <Head>
-          <link
+          <link rel="icon" type="image/png" href="/favicon/favicon.ico" />
+          {/* // TODO: platform-specific favicons */}
+          {/* <link
             rel="apple-touch-icon"
             sizes="57x57"
             href="/regular-apple-icon-57x57.png"
@@ -156,13 +158,13 @@ export const SEO = memo<Props>(
             type="image/png"
             sizes="16x16"
             href="/favicon-16x16.png"
-          />
-          <link rel="manifest" href="/manifest.json" />
-          <meta name="msapplication-TileColor" content="#FFC532" />
-          <meta
+          /> */}
+          {/* <meta
             name="msapplication-TileImage"
             content="/regular-ms-icon-144x144.png"
-          />
+          /> */}
+          <meta name="msapplication-TileColor" content="#FFC532" />
+          <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#FFC532" />
         </Head>
       </>
