@@ -31,12 +31,12 @@ export const NavBar = memo<Props>(({ routes }) => {
         <div className="flex h-12 items-center justify-center gap-3">
           <nav className="z-0 flex h-full rounded-xl bg-jurregray dark:bg-jurredarklight">
             {routes.map((route) => (
-              <div className="relative flex items-center justify-center">
+              <div
+                key={route.path}
+                className="relative flex items-center justify-center"
+              >
                 <Link href={route.path}>
-                  <a
-                    key={route.path}
-                    className="z-10 cursor-pointer p-3 py-1 px-3 font-semibold tracking-wide"
-                  >
+                  <a className="z-10 cursor-pointer p-3 py-1 px-3 font-semibold tracking-wide">
                     {route.label}
                   </a>
                 </Link>
@@ -74,3 +74,5 @@ export const NavBar = memo<Props>(({ routes }) => {
     </div>
   )
 })
+
+NavBar.displayName = 'NavBar'
