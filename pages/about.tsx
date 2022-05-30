@@ -11,7 +11,7 @@ const About: NextPage = () => {
       <SEO
         title={title}
         description={description}
-        imageUrl={'/img/about.png'}
+        // imageUrl={'/img/about.png'}
       />
     </Layout>
   )

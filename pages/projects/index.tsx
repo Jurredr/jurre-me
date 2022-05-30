@@ -12,7 +12,7 @@ const Projects: NextPage = () => {
       <SEO
         title={title}
         description={description}
-        imageUrl={'/img/about.png'}
+        // imageUrl={'/img/projects.png'}
       />
     </Layout>
   )
