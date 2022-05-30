@@ -1,0 +1,107 @@
+{
+  "name": "Jurre de Ruiter",
+  "short_name": "jurre.me",
+  "description": "Heyo, I'm Jurre; an ambitious full-stack developer, Computer Science student, and entrepreneur from The Netherlands!",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFC532",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon/regular-android-icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/regular-android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/regular-android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/regular-android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/regular-android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/regular-android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/regular-android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon/maskable-android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

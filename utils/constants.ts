@@ -12,6 +12,6 @@ export const SEPARATOR = ' | '
 export const SITE_TITLE = 'Jurre de Ruiter'
 export const SITE_TITLE_TEMPLATE = `${SITE_TITLE} ${SEPARATOR} %s`
 export const SHORT_DESCRIPTION = "Jurre's personal website & portfolio"
-export const DEFAULT_DESCRIPTION = `Heyo, I'm Jurre: an ambitious ${getMyCurrentAge} year old full-stack developer, Computer Science student, and entrepreneur from The Netherlands!`
+export const DEFAULT_DESCRIPTION = `Heyo, I'm Jurre; an ambitious ${getMyCurrentAge} year old full-stack developer, Computer Science student, and entrepreneur from The Netherlands!`
 
 export const DEFAULT_IMAGE_URL = `/img/banner.png`
