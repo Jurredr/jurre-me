@@ -4,7 +4,7 @@ import ShadowButton from '../ShadowButton'
 
 const HomeContact: React.FC = () => {
   return (
-    <div className="mb-72 flex flex-col items-center justify-center md:flex-row-reverse md:justify-end">
+    <section className="mb-72 flex flex-col items-center justify-center md:flex-row-reverse md:justify-end">
       <div className="relative h-[24rem] w-[24rem] md:absolute md:right-8 mdlg:right-16 lg:right-32 xl:right-40 2xl:right-48 2xl:h-[30rem] 2xl:w-[30rem]">
         <div className="relative h-full w-full dark:hidden">
           <Image
@@ -80,7 +80,7 @@ const HomeContact: React.FC = () => {
           </ShadowButton>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

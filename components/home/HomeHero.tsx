@@ -1,6 +1,6 @@
 const HomeHero: React.FC = () => {
   return (
-    <div className="mt-28 mb-28 flex flex-col items-end px-8 lg:px-32 xl:px-48">
+    <section className="mt-28 mb-28 flex flex-col items-end px-8 lg:px-32 xl:px-48">
       <h1 className="noselect self-center whitespace-nowrap font-freigeistwide text-[23rem] font-black leading-[10.8rem] tracking-[-0.07em] text-jurreyellow">
         JURRE
       </h1>
@@ -13,7 +13,7 @@ const HomeHero: React.FC = () => {
         </p>
         <p className="whitespace-nowrap">I code stuff. 🤓</p>
       </div>
-    </div>
+    </section>
   )
 }
 
