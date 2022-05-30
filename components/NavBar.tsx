@@ -6,7 +6,7 @@ const NavBar: React.FC = () => {
   const { setTheme } = useTheme()
 
   return (
-    <div className="flex items-center justify-between gap-2 py-8 px-6 lg:px-32 xl:px-48">
+    <div className="flex items-center justify-between gap-2 py-8 px-6  mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
       <MaskSvg
         className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white sm:hidden"
         url="/icons/logo-icon.svg"
