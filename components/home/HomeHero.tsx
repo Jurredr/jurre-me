@@ -1,3 +1,6 @@
+import { scroller } from 'react-scroll'
+import MaskSvg from '../MaskSvg'
+
 const HomeHero: React.FC = () => {
   return (
     <div className="flex items-center justify-center">
@@ -13,7 +16,28 @@ const HomeHero: React.FC = () => {
             <span className="font-medium">Heyo</span>, I&rsquo;m Jurre de
             Ruiter!
           </p>
-          <p className="whitespace-nowrap">I code stuff. 🤓</p>
+          <div className="flex items-center justify-center gap-2">
+            <p className="whitespace-nowrap">I code stuff. 🤓</p>
+            <div
+              className="flex w-fit cursor-pointer items-center justify-start gap-2 border-b-[3px] border-b-black pr-1 dark:border-b-white"
+              onClick={() =>
+                scroller.scrollTo('about-scroller', {
+                  duration: 800,
+                  delay: 0,
+                  smooth: 'easeInOutQuart'
+                })
+              }
+            >
+              <p className="whitespace-nowrap text-[1.5rem] font-medium tracking-wide">
+                Learn more
+              </p>
+              <MaskSvg
+                className="h-[0.8rem] w-[0.8rem] rotate-90 dark:!bg-white"
+                url="/img/icons/arrow-tr.svg"
+                color="black"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>

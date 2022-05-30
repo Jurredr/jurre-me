@@ -39,7 +39,7 @@ const HomeContact: React.FC = () => {
                   e.preventDefault()
                 }}
               >
-                <p className="whitespace-nowrap font-euclid text-[1.5rem] tracking-wide">
+                <p className="whitespace-nowrap text-[1.5rem] tracking-wide">
                   Shoot me a message!
                 </p>
                 <MaskSvg
