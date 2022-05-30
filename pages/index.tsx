@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Cursor from '../components/Cursor'
 import Footer from '../components/Footer'
 import HomeAbout from '../components/home/HomeAbout'
+import HomeContact from '../components/home/HomeContact'
 import HomeHero from '../components/home/HomeHero'
 import HomeProjects from '../components/home/HomeProjects'
 import HomeToolScroller from '../components/home/HomeToolScroller'
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <HomeAbout />
       <HomeToolScroller />
       <HomeProjects />
+      <HomeContact />
       <Footer />
     </div>
   )
