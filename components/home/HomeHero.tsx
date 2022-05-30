@@ -4,13 +4,33 @@ import MaskSvg from '../MaskSvg'
 const HomeHero: React.FC = () => {
   return (
     <div className="flex items-center justify-center">
-      <section className="mt-28 mb-28 flex w-full max-w-[1680px] flex-col items-end px-8 lg:px-32 xl:px-48">
-        <h1 className="noselect self-center whitespace-nowrap font-freigeistwide text-[23rem] font-black leading-[10.8rem] tracking-[-0.07em] text-jurreyellow">
-          JURRE
-        </h1>
-        <h2 className="noselect whitespace-nowrap font-freigeistwide text-[8.2rem] font-black tracking-[-0.07em] text-black dark:text-white">
-          de Ruiter
-        </h2>
+      <section className="mt-28 mb-28 flex w-full max-w-[1680px] flex-col items-end px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
+        <svg width="100%" height="100%" viewBox="0 0 35 7.2">
+          <text
+            x={0}
+            y={7.2}
+            fontSize="10"
+            fontWeight="900"
+            letterSpacing="-0.07em"
+            fontFamily="Freigeist Wide"
+            className="fill-jurreyellow"
+          >
+            JURRE
+          </text>
+        </svg>
+        <svg width="100%" height="100%" viewBox="0 0 100 10">
+          <text
+            x={54.5}
+            y={7.8}
+            fontSize="10px"
+            fontWeight="900"
+            letterSpacing="-0.07em"
+            fontFamily="Freigeist Wide"
+            className="-translate-x-[0.6rem] translate-y-[0.095rem] fill-black text-[12px] dark:fill-white xs:translate-x-0 xs:translate-y-0 xs:text-[10px]"
+          >
+            de Ruiter
+          </text>
+        </svg>
         <div className="border-l-[0.4rem] border-l-jurreyellow pl-4 text-3xl font-light leading-[1.3]">
           <p className="whitespace-nowrap">
             <span className="font-medium">Heyo</span>, I&rsquo;m Jurre de
