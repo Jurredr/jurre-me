@@ -12,7 +12,11 @@ const HomeAbout: React.FC = () => {
         </h2>
       </div>
       <div className="relative h-[25rem] w-[25rem]">
-        <Image src="/img/avatars/jurre_smile.png" layout="fill" />
+        <Image
+          src="/img/avatars/jurre_smile.png"
+          layout="fill"
+          draggable={false}
+        />
       </div>
     </div>
   )

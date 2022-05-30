@@ -7,10 +7,18 @@ const HomeContact: React.FC = () => {
     <div className="mb-72 flex flex-col items-center justify-center md:flex-row-reverse md:justify-end">
       <div className="relative h-[24rem] w-[24rem] md:absolute md:right-8 mdlg:right-16 lg:right-32 xl:right-40 2xl:right-48 2xl:h-[30rem] 2xl:w-[30rem]">
         <div className="relative h-full w-full dark:hidden">
-          <Image src="/img/avatars/jurre_contact_light.png" layout="fill" />
+          <Image
+            src="/img/avatars/jurre_contact_light.png"
+            layout="fill"
+            draggable={false}
+          />
         </div>
         <div className="relative hidden h-full w-full dark:block">
-          <Image src="/img/avatars/jurre_contact_dark.png" layout="fill" />
+          <Image
+            src="/img/avatars/jurre_contact_dark.png"
+            layout="fill"
+            draggable={false}
+          />
         </div>
       </div>
       <div className="flex flex-col md:ml-8 mdlg:ml-16 lg:ml-32 xl:ml-40 2xl:ml-48">
@@ -43,7 +51,11 @@ const HomeContact: React.FC = () => {
         </div>
         <div className="flex w-fit gap-5">
           <ShadowButton href="https://www.instagram.com/jurre.053/">
-            <Image src="/img/icons/instagram-fill.svg" layout="fill" />
+            <Image
+              src="/img/icons/instagram-fill.svg"
+              layout="fill"
+              draggable={false}
+            />
           </ShadowButton>
           <ShadowButton href="https://twitter.com/JurredeRuiter">
             <MaskSvg
