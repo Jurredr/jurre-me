@@ -27,19 +27,22 @@ export const NavBar = memo<Props>(({ routes }) => {
       <div className="hidden dark:sm:block">
         <Logo color="white" />
       </div>
-      <div className="flex items-center justify-center gap-3">
-        <nav className="flex gap-1 rounded-xl bg-jurregray p-2 font-semibold tracking-wide dark:bg-jurredarklight">
+      <div className="flex h-12 items-center justify-center gap-3">
+        <nav className="z-0 flex h-full rounded-xl bg-jurregray dark:bg-jurredarklight">
           {routes.map((route) => (
-            <div>
+            <div className="relative flex items-center justify-center">
               <Link href={route.path}>
-                <a key={route.path} className="z-10 cursor-pointer py-1 px-2">
+                <a
+                  key={route.path}
+                  className="z-10 cursor-pointer p-3 py-1 px-3 font-semibold tracking-wide"
+                >
                   {route.label}
                 </a>
               </Link>
               {pathname === route.path ||
               (pathname.startsWith(route.path) && route.path !== '/') ? (
                 <motion.div
-                  className="z-0 rounded-lg bg-white dark:bg-jurredark"
+                  className="absolute left-0 top-0 right-0 bottom-0 -z-10 m-auto h-[80%] w-[85%] rounded-lg bg-white dark:bg-jurredark"
                   layoutId="active"
                   transition={{ type: 'spring', stiffness: 270, damping: 30 }}
                 />
