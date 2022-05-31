@@ -3,7 +3,7 @@ import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { memo } from 'react'
-import { Route } from '../types'
+import { Route } from '../../types'
 import Logo from './Logo'
 import MaskSvg from './MaskSvg'
 

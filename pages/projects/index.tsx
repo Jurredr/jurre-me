@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import { Layout } from '../../components/common/Layout'
 import PageHero from '../../components/common/PageHero'
-import ProjectGridItem from '../../components/projects/ProjectGridItem'
 import SearchBar from '../../components/projects/SearchBar'
 import { SEO } from '../../components/common/SEO'
+import ProjectsGrid from '../../components/projects/ProjectsGrid'
 
 const Projects: NextPage = () => {
   const title = 'Projects'
@@ -21,32 +21,8 @@ const Projects: NextPage = () => {
         All <span className="font-medium text-jurreyellow">43</span> projects I
         have worked on can be found here. 🔨
       </PageHero>
-      <div className="mt-6" />
       <SearchBar />
-      <div className="mt-16 mb-48 flex items-center justify-center overflow-hidden">
-        <div className="grid grid-cols-1 gap-24 xl:grid-cols-2">
-          <ProjectGridItem
-            title="Glassdown"
-            description="Glassdown is a modern, fast, and transparent Markdown editor, made to learn ElectronJS ⚡️"
-            tags={['typescript', 'electron']}
-          />
-          <ProjectGridItem
-            title="Glassdown"
-            description="Glassdown is a modern, fast, and transparent Markdown editor, made to learn ElectronJS ⚡️"
-            tags={['typescript', 'electron']}
-          />
-          <ProjectGridItem
-            title="Glassdown"
-            description="Glassdown is a modern, fast, and transparent Markdown editor, made to learn ElectronJS ⚡️"
-            tags={['typescript', 'electron']}
-          />
-          <ProjectGridItem
-            title="Glassdown"
-            description="Glassdown is a modern, fast, and transparent Markdown editor, made to learn ElectronJS ⚡️"
-            tags={['typescript', 'electron']}
-          />
-        </div>
-      </div>
+      <ProjectsGrid />
     </Layout>
   )
 }

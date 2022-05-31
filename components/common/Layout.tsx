@@ -1,6 +1,6 @@
 import { memo } from 'react'
 import Footer from './Footer'
-import { routes } from '../data/routes'
+import { routes } from '../../data/routes'
 import { NavBar } from './NavBar'
 
 type Props = {

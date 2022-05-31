@@ -9,8 +9,8 @@ import {
   SITE_TITLE,
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_URL
-} from '../utils/constants'
-import { Author } from '../types'
+} from '../../utils/constants'
+import { Author } from '../../types'
 
 type Props = {
   readonly title?: string

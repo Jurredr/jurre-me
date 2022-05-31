@@ -2,7 +2,7 @@ import MaskSvg from '../common/MaskSvg'
 
 const SearchBar: React.FC = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="mt-6 flex items-center justify-center">
       <div className="flex items-center justify-start gap-2 rounded-2xl border-2 border-jurrelightgray bg-white py-[0.6rem] px-5">
         <MaskSvg
           className="h-[1.2rem] w-[1.2rem] !bg-jurregray"
