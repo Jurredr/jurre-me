@@ -5,10 +5,10 @@ const HomeHero: React.FC = () => {
   return (
     <div className="flex items-center justify-center">
       <section className="mt-28 mb-28 flex w-full max-w-[1680px] flex-col items-end px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
-        <svg width="100%" height="100%" viewBox="0 0 35 7.2">
+        <svg width="100%" height="100%" viewBox="0 0 35 7.1">
           <text
             x={0}
-            y={7.2}
+            y={7.0}
             fontSize="10"
             fontWeight="900"
             letterSpacing="-0.07em"
