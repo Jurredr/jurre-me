@@ -18,18 +18,24 @@ export const NavBar = memo<Props>(({ routes }) => {
   return (
     <div className="flex items-center justify-center">
       <div className="flex w-full max-w-[1680px] items-center justify-between gap-2 py-8 px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
-        <MaskSvg
-          className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white sm:hidden"
-          url="/img/icons/logo-icon.svg"
-        />
-        <div className="hidden dark:hidden sm:block">
-          <Logo color="black" />
-        </div>
-        <div className="hidden dark:sm:block">
-          <Logo color="white" />
-        </div>
+        <Link href="/">
+          <MaskSvg
+            className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white sm:hidden"
+            url="/img/icons/logo-icon.svg"
+          />
+        </Link>
+        <Link href="/">
+          <div className="hidden cursor-pointer dark:hidden sm:block">
+            <Logo color="black" />
+          </div>
+        </Link>
+        <Link href="/">
+          <div className="hidden cursor-pointer dark:sm:block">
+            <Logo color="white" />
+          </div>
+        </Link>
         <div className="flex h-12 items-center justify-center gap-3">
-          <nav className="bg-jurrelightgray z-0 flex h-full rounded-xl dark:bg-jurredarklight">
+          <nav className="z-0 flex h-full rounded-xl bg-jurrelightgray dark:bg-jurredarklight">
             {routes.map((route) => (
               <div
                 key={route.path}
@@ -53,7 +59,7 @@ export const NavBar = memo<Props>(({ routes }) => {
           </nav>
           <div className="cursor-pointer">
             <div
-              className="bg-jurrelightgray rounded-2xl p-4 dark:hidden"
+              className="rounded-2xl bg-jurrelightgray p-4 dark:hidden"
               onClick={() => setTheme('dark')}
             >
               <MaskSvg className="h-4 w-4" url="/img/icons/moon.svg" />
