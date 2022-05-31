@@ -19,20 +19,22 @@ export const NavBar = memo<Props>(({ routes }) => {
     <div className="flex items-center justify-center">
       <div className="flex w-full max-w-[1680px] items-center justify-between gap-2 py-8 px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
         <Link href="/">
-          <MaskSvg
-            className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white sm:hidden"
-            url="/img/icons/logo-icon.svg"
-          />
+          <a className="sm:hidden">
+            <MaskSvg
+              className="min-h-7 min-w-7 mb-1 h-7 w-7 dark:!bg-white"
+              url="/img/icons/logo-icon.svg"
+            />
+          </a>
         </Link>
         <Link href="/">
-          <div className="hidden cursor-pointer dark:hidden sm:block">
+          <a className="hidden cursor-pointer dark:hidden sm:block">
             <Logo color="black" />
-          </div>
+          </a>
         </Link>
         <Link href="/">
-          <div className="hidden cursor-pointer dark:sm:block">
+          <a className="hidden cursor-pointer dark:sm:block">
             <Logo color="white" />
-          </div>
+          </a>
         </Link>
         <div className="flex h-12 items-center justify-center gap-3">
           <nav className="z-0 flex h-full rounded-xl bg-jurrelightgray dark:bg-jurredarklight">
