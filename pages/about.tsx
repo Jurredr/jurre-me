@@ -19,6 +19,7 @@ const About: NextPage = () => {
         <br />
         You&rsquo;re in the right place! 😎
       </PageHero>
+      <div className="mb-80" />
     </Layout>
   )
 }
