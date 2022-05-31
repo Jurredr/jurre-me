@@ -4,7 +4,7 @@ import MaskSvg from './MaskSvg'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex items-center justify-center bg-jurreoffwhite dark:bg-jurredarklight">
+    <footer className="flex items-center justify-center bg-jurreoffwhite transition-colors duration-300 dark:bg-jurredarklight">
       <div className="flex w-full max-w-[1680px] flex-col items-center justify-between py-14 px-8 font-euclid md:flex-row mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
         <div className="mb-6 flex flex-row items-center justify-center gap-4 md:mb-0 md:gap-12">
           <div
