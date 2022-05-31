@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { scroller } from 'react-scroll'
-import MaskSvg from '../MaskSvg'
+import MaskSvg from '../common/MaskSvg'
 
 const HomeHero: React.FC = () => {
   return (

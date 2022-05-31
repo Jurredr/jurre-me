@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import { Layout } from '../../components/Layout'
-import PageHero from '../../components/PageHero'
+import { Layout } from '../../components/common/Layout'
+import PageHero from '../../components/common/PageHero'
 import ProjectGridItem from '../../components/projects/ProjectGridItem'
 import SearchBar from '../../components/projects/SearchBar'
-import { SEO } from '../../components/SEO'
+import { SEO } from '../../components/common/SEO'
 
 const Projects: NextPage = () => {
   const title = 'Projects'

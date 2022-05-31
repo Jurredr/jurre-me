@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import MaskSvg from '../MaskSvg'
-import ShadowButton from '../ShadowButton'
+import MaskSvg from '../common/MaskSvg'
+import ShadowButton from '../common/ShadowButton'
 
 const HomeContact: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
-import { Layout } from '../components/Layout'
-import PageHero from '../components/PageHero'
-import { SEO } from '../components/SEO'
+import { Layout } from '../components/common/Layout'
+import PageHero from '../components/common/PageHero'
+import { SEO } from '../components/common/SEO'
 
 const About: NextPage = () => {
   const title = 'About'

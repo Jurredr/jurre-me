@@ -1,4 +1,4 @@
-import MaskSvg from '../MaskSvg'
+import MaskSvg from '../common/MaskSvg'
 
 const HomeProjects: React.FC = () => {
   return (

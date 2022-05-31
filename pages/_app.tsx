@@ -2,8 +2,8 @@ import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
-import { SEO } from '../components/SEO'
-import Cursor from '../components/Cursor'
+import { SEO } from '../components/common/SEO'
+import Cursor from '../components/common/Cursor'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
