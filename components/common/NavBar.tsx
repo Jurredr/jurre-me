@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
-import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { memo } from 'react'
 import { Route } from '../../types'
 import Logo from './Logo'
 import MaskSvg from './MaskSvg'
+import ThemeToggler from './theme-toggler/ThemeToggler'
 
 type Props = {
   readonly routes: Route[]
@@ -13,7 +13,6 @@ type Props = {
 
 export const NavBar = memo<Props>(({ routes }) => {
   const { pathname } = useRouter()
-  const { setTheme } = useTheme()
 
   return (
     <div className="flex items-center justify-center">
@@ -59,24 +58,7 @@ export const NavBar = memo<Props>(({ routes }) => {
               </div>
             ))}
           </nav>
-          <div className="cursor-pointer">
-            <div
-              className="rounded-2xl bg-jurrelightgray p-4 dark:hidden"
-              onClick={() => setTheme('dark')}
-            >
-              <MaskSvg className="h-4 w-4" url="/img/icons/moon.svg" />
-            </div>
-            <div
-              className="hidden rounded-2xl bg-jurredarklight p-4 dark:block"
-              onClick={() => setTheme('light')}
-            >
-              <MaskSvg
-                className="h-4 w-4"
-                url="/img/icons/sun.svg"
-                color="white"
-              />
-            </div>
-          </div>
+          <ThemeToggler />
         </div>
       </div>
     </div>
