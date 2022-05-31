@@ -30,7 +30,7 @@ const MoonIcon: React.FC<Props> = (props) => {
       height="1em"
       viewBox="0 0 50 50"
       key="moon"
-      variants={props.firstRender ? {} : whileTap}
+      variants={whileTap}
       style={{ originX: '50%', originY: '50%' }}
     >
       <motion.path
