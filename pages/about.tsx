@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
+import PageHero from '../components/PageHero'
 import { SEO } from '../components/SEO'
 
 const About: NextPage = () => {
@@ -13,6 +14,11 @@ const About: NextPage = () => {
         description={description}
         // imageUrl={'/img/about.png'}
       />
+      <PageHero title={title}>
+        Want to learn more about me?
+        <br />
+        You&rsquo;re in the right place! 😎
+      </PageHero>
     </Layout>
   )
 }

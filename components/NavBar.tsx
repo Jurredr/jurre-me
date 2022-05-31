@@ -29,7 +29,7 @@ export const NavBar = memo<Props>(({ routes }) => {
           <Logo color="white" />
         </div>
         <div className="flex h-12 items-center justify-center gap-3">
-          <nav className="z-0 flex h-full rounded-xl bg-jurregray dark:bg-jurredarklight">
+          <nav className="bg-jurrelightgray z-0 flex h-full rounded-xl dark:bg-jurredarklight">
             {routes.map((route) => (
               <div
                 key={route.path}
@@ -53,7 +53,7 @@ export const NavBar = memo<Props>(({ routes }) => {
           </nav>
           <div className="cursor-pointer">
             <div
-              className="rounded-2xl bg-jurregray p-4 dark:hidden"
+              className="bg-jurrelightgray rounded-2xl p-4 dark:hidden"
               onClick={() => setTheme('dark')}
             >
               <MaskSvg className="h-4 w-4" url="/img/icons/moon.svg" />
