@@ -9,7 +9,7 @@ const PageHero: React.FC<Props> = (props) => {
       <h1 className="font-freigeistwide text-[5rem] font-black tracking-[-0.07em] text-black dark:text-white md:text-[6rem]">
         {props.title}
       </h1>
-      <p className="text-center text-2xl text-jurregray dark:text-jurredarkgray">
+      <p className="text-center text-lg text-jurregray dark:text-jurredarkgray sm:text-xl md:text-2xl">
         {props.children}
       </p>
     </section>
