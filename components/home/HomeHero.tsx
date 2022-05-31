@@ -1,36 +1,39 @@
+import Image from 'next/image'
 import { scroller } from 'react-scroll'
 import MaskSvg from '../MaskSvg'
 
 const HomeHero: React.FC = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="relative flex items-center justify-center">
       <section className="mt-28 mb-28 flex w-full max-w-[1680px] flex-col items-end px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
-        <svg width="100%" height="100%" viewBox="0 0 35 7.1">
-          <text
-            x={0}
-            y={7.0}
-            fontSize="10"
-            fontWeight="900"
-            letterSpacing="-0.07em"
-            fontFamily="Freigeist Wide"
-            className="fill-jurreyellow"
-          >
-            JURRE
-          </text>
-        </svg>
-        <svg width="100%" height="100%" viewBox="0 0 100 10">
-          <text
-            x={54.5}
-            y={7.8}
-            fontSize="10px"
-            fontWeight="900"
-            letterSpacing="-0.07em"
-            fontFamily="Freigeist Wide"
-            className="-translate-x-[0.6rem] translate-y-[0.095rem] fill-black text-[12px] dark:fill-white xs:translate-x-0 xs:translate-y-0 xs:text-[10px]"
-          >
-            de Ruiter
-          </text>
-        </svg>
+        <div className="h-full w-full">
+          <svg width="100%" height="100%" viewBox="0 0 35 7.1">
+            <text
+              x={0}
+              y={7.0}
+              fontSize="10"
+              fontWeight="900"
+              letterSpacing="-0.07em"
+              fontFamily="Freigeist Wide"
+              className="fill-jurreyellow"
+            >
+              JURRE
+            </text>
+          </svg>
+          <svg width="100%" height="100%" viewBox="0 0 100 10">
+            <text
+              x={54.5}
+              y={7.8}
+              fontSize="10px"
+              fontWeight="900"
+              letterSpacing="-0.07em"
+              fontFamily="Freigeist Wide"
+              className="-translate-x-[0.6rem] translate-y-[0.095rem] fill-black text-[12px] dark:fill-white xs:translate-x-0 xs:translate-y-0 xs:text-[10px]"
+            >
+              de Ruiter
+            </text>
+          </svg>
+        </div>
         <div className="border-l-[0.4rem] border-l-jurreyellow pl-4 text-3xl font-light leading-[1.3]">
           <p className="whitespace-nowrap">
             <span className="font-medium">Heyo</span>, I&rsquo;m Jurre de
@@ -60,6 +63,9 @@ const HomeHero: React.FC = () => {
           </div>
         </div>
       </section>
+      <div className="absolute -left-10 right-0 -bottom-[65%] h-full w-[200%] lg:w-[110%]">
+        <Image src="/img/shapes/rainbow_wave.svg" layout="fill" />
+      </div>
     </div>
   )
 }

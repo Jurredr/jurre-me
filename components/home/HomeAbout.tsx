@@ -3,7 +3,7 @@ import Image from 'next/image'
 const HomeAbout: React.FC = () => {
   return (
     <section
-      className="mb-40 flex flex-col items-center justify-center pt-32"
+      className="mt-60 mb-40 flex flex-col items-center justify-center pt-32"
       id="about-scroller"
     >
       <div className="mb-20 flex flex-col items-center justify-center">
