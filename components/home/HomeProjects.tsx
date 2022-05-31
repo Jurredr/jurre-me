@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import MaskSvg from '../common/MaskSvg'
 
 const HomeProjects: React.FC = () => {
@@ -10,14 +11,16 @@ const HomeProjects: React.FC = () => {
         <h2 className="mt-4 whitespace-nowrap font-euclid text-lg tracking-wide text-black dark:text-white sm:text-[1.75rem]">
           Check out some of my latest stuff!
         </h2>
-        <button className="mb-16 mt-6 flex items-center justify-center gap-3 rounded-2xl bg-jurreyellow py-3 px-7 dark:bg-jurredarkyellow">
-          <p className="text-white">Check all</p>
-          <MaskSvg
-            className="h-[0.65rem] w-[0.65rem]"
-            url="/img/icons/arrow-tr.svg"
-            color="white"
-          />
-        </button>
+        <Link href="/projects" passHref>
+          <a className="mb-16 mt-6 flex items-center justify-center gap-3 rounded-2xl bg-jurreyellow py-3 px-7 dark:bg-jurredarkyellow">
+            <p className="text-white">Check all</p>
+            <MaskSvg
+              className="h-[0.65rem] w-[0.65rem]"
+              url="/img/icons/arrow-tr.svg"
+              color="white"
+            />
+          </a>
+        </Link>
         <div className="h-[60rem] w-full px-6 sm:px-12 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
           <div className="h-full w-full rounded-[5rem] bg-jurreoffwhite dark:bg-jurredarklight"></div>
         </div>
