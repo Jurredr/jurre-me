@@ -92,10 +92,16 @@ const HomeHero: React.FC = () => {
           layout="fill"
           objectFit="contain"
           quality={100}
+          draggable={false}
         />
       </div>
       <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] lg:w-[110%]">
-        <Image src="/img/shapes/rainbow_wave.svg" layout="fill" quality={100} />
+        <Image
+          src="/img/shapes/rainbow_wave.svg"
+          layout="fill"
+          quality={100}
+          draggable={false}
+        />
       </div>
     </div>
   )
