@@ -46,11 +46,10 @@ const HomeHero: React.FC = () => {
               viewBox="0 0 268.816 24.428"
             >
               <path
-                className="stroke-[5] lg:stroke-[3]"
+                className="-translate-y-[1144.5rem] -translate-x-[36.2rem] rotate-[-2deg] stroke-[5] xs:-translate-y-[1145.3rem] lg:stroke-[3]"
                 id="Path_69"
                 data-name="Path 69"
                 d="M-56.486,18342.422c235.554-15.086,261.313,3.1,261.313,3.1"
-                transform="matrix(0.999, -0.035, 0.035, 0.999, -580.739, -18315.463)"
                 fill="none"
                 stroke="#ffc532"
                 stroke-linecap="round"
