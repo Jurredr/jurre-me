@@ -10,7 +10,6 @@ const ThemeToggler = () => {
   const firstRender = useRef(true)
 
   useEffect(() => {
-    console.log(firstRender)
     if (firstRender.current) {
       firstRender.current = false
       return

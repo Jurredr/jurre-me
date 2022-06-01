@@ -5,7 +5,7 @@ import MaskSvg from '../common/MaskSvg'
 const HomeHero: React.FC = () => {
   return (
     <div className="relative flex items-center justify-center">
-      <section className="mt-28 mb-28 flex w-full max-w-[1680px] flex-col items-end px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
+      <section className="mt-24 mb-28 flex w-full max-w-[1680px] flex-col items-end px-6 mdlg:px-16 lg:px-32 xl:px-40 2xl:px-48">
         <div className="h-full w-full">
           <svg width="100%" height="100%" viewBox="0 0 35 7.1">
             <text
@@ -20,7 +20,12 @@ const HomeHero: React.FC = () => {
               JURRE
             </text>
           </svg>
-          <svg width="100%" height="100%" viewBox="0 0 100 10">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 14"
+            className="relative"
+          >
             <text
               x={54.5}
               y={7.8}
@@ -32,9 +37,28 @@ const HomeHero: React.FC = () => {
             >
               de Ruiter
             </text>
+            <svg
+              x={56.5}
+              y={7.3}
+              xmlns="http://www.w3.org/2000/svg"
+              width="40.816"
+              height="8.428"
+              viewBox="0 0 268.816 24.428"
+            >
+              <path
+                className="stroke-[5] lg:stroke-[3]"
+                id="Path_69"
+                data-name="Path 69"
+                d="M-56.486,18342.422c235.554-15.086,261.313,3.1,261.313,3.1"
+                transform="matrix(0.999, -0.035, 0.035, 0.999, -580.739, -18315.463)"
+                fill="none"
+                stroke="#ffc532"
+                stroke-linecap="round"
+              />
+            </svg>
           </svg>
         </div>
-        <div className="border-l-[0.4rem] border-l-jurreyellow pl-4 text-3xl font-light leading-[1.3]">
+        <div className="z-10 border-l-[0.4rem] border-l-jurreyellow pl-4 text-3xl font-light leading-[1.3]">
           <p className="whitespace-nowrap">
             <span className="font-medium">Heyo</span>, I&rsquo;m Jurre de
             Ruiter!
@@ -63,7 +87,7 @@ const HomeHero: React.FC = () => {
           </div>
         </div>
       </section>
-      <div className="absolute -left-10 right-0 -bottom-[65%] h-full w-[200%] lg:w-[110%]">
+      <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] lg:w-[110%]">
         <Image src="/img/shapes/rainbow_wave.svg" layout="fill" />
       </div>
     </div>

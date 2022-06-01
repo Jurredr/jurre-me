@@ -5,7 +5,7 @@ interface Props {
 
 const PageHero: React.FC<Props> = (props) => {
   return (
-    <section className="mt-16 flex flex-col items-center justify-center">
+    <section className="mt-14 flex flex-col items-center justify-center">
       <h1 className="font-freigeistwide text-[5rem] font-black tracking-[-0.07em] text-black dark:text-white md:text-[6rem]">
         {props.title}
       </h1>
