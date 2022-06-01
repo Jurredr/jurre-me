@@ -12,6 +12,7 @@ const HomeContact: React.FC = () => {
               src="/img/avatars/jurre_contact_light.png"
               layout="fill"
               draggable={false}
+              quality={100}
             />
           </div>
           <div className="relative hidden h-full w-full dark:block">
@@ -19,6 +20,7 @@ const HomeContact: React.FC = () => {
               src="/img/avatars/jurre_contact_dark.png"
               layout="fill"
               draggable={false}
+              quality={100}
             />
           </div>
         </div>

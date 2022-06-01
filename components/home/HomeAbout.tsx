@@ -19,6 +19,7 @@ const HomeAbout: React.FC = () => {
           src="/img/avatars/jurre_smile.png"
           layout="fill"
           draggable={false}
+          quality={100}
         />
       </div>
     </section>
