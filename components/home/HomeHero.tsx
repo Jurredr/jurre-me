@@ -95,9 +95,17 @@ const HomeHero: React.FC = () => {
           draggable={false}
         />
       </div>
-      <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] lg:w-[110%]">
+      <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] dark:hidden lg:w-[110%]">
         <Image
           src="/img/shapes/rainbow_wave.svg"
+          layout="fill"
+          quality={100}
+          draggable={false}
+        />
+      </div>
+      <div className="absolute -left-10 right-0 -bottom-[61%] hidden h-full w-[200%] dark:block lg:w-[110%]">
+        <Image
+          src="/img/shapes/rainbow_wave_dark.svg"
           layout="fill"
           quality={100}
           draggable={false}
