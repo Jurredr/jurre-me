@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { scroller } from 'react-scroll'
 import MaskSvg from '../common/MaskSvg'
@@ -86,7 +87,26 @@ const HomeHero: React.FC = () => {
           </div>
         </div>
       </section>
-      <div className="absolute -bottom-[18%] sm:-left-[16%] sm:h-[90%] sm:w-[40rem] md:-left-[4%] lg:-bottom-[14%] lg:left-[4%] xl:left-[8%] xl:h-full xl:w-[46rem] 2xl:left-[10%]">
+      <motion.div
+        variants={{
+          start: {
+            y: 600,
+            rotate: 30
+          },
+          end: {
+            y: 0,
+            rotate: 0
+          }
+        }}
+        initial="start"
+        animate="end"
+        transition={{
+          type: 'spring',
+          stiffness: 70,
+          duration: 1.5
+        }}
+        className="absolute -bottom-[18%] sm:-left-[16%] sm:h-[90%] sm:w-[40rem] md:-left-[4%] lg:-bottom-[14%] lg:left-[4%] xl:left-[8%] xl:h-full xl:w-[46rem] 2xl:left-[10%]"
+      >
         <Image
           src="/img/avatars/jurre_wave.png"
           layout="fill"
@@ -94,7 +114,7 @@ const HomeHero: React.FC = () => {
           quality={100}
           draggable={false}
         />
-      </div>
+      </motion.div>
       <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] dark:hidden lg:w-[110%]">
         <Image
           src="/img/shapes/rainbow_wave.svg"
