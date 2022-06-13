@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center justify-center gap-8 text-black md:flex-row md:gap-11">
           <AnimatedLink
             href="mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
-            color="from-black to-black"
+            color="from-black to-black dark:from-white dark:to-white"
           >
             <div className="flex items-center justify-center gap-2">
               <MaskSvg
