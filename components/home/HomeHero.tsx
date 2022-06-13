@@ -53,7 +53,7 @@ const HomeHero: React.FC = () => {
                 d="M-56.486,18342.422c235.554-15.086,261.313,3.1,261.313,3.1"
                 fill="none"
                 stroke="#ffc532"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
             </svg>
           </svg>
@@ -113,6 +113,7 @@ const HomeHero: React.FC = () => {
           objectFit="contain"
           quality={100}
           draggable={false}
+          priority={true}
         />
       </motion.div>
       <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] dark:hidden lg:w-[110%]">
@@ -121,6 +122,7 @@ const HomeHero: React.FC = () => {
           layout="fill"
           quality={100}
           draggable={false}
+          priority={true}
         />
       </div>
       <div className="absolute -left-10 right-0 -bottom-[61%] hidden h-full w-[200%] dark:block lg:w-[110%]">
@@ -129,6 +131,7 @@ const HomeHero: React.FC = () => {
           layout="fill"
           quality={100}
           draggable={false}
+          priority={true}
         />
       </div>
     </div>
