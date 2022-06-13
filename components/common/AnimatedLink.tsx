@@ -5,6 +5,8 @@ interface Props {
   readonly children: React.ReactNode
   readonly href: string
   readonly color: string
+  readonly iconColor: string
+  readonly iconSize: string
 }
 
 const AnimatedLink: React.FC<Props> = (props) => {
@@ -26,9 +28,15 @@ const AnimatedLink: React.FC<Props> = (props) => {
         <span className="ml-[0.6rem] flex items-center justify-center">
           &#xfeff;
           <MaskSvg
-            className="h-[0.7rem] w-[0.7rem] dark:!bg-white"
+            className={
+              'iconColor h-[' +
+              props.iconSize +
+              '] w-[' +
+              props.iconSize +
+              '] ' +
+              props.iconColor
+            }
             url="/img/icons/arrow-tr.svg"
-            color="black"
           />
         </span>
       </a>

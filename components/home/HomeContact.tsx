@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import AnimatedLink from '../common/AnimatedLink'
 import MaskSvg from '../common/MaskSvg'
 import ShadowButton from '../common/ShadowButton'
 
@@ -33,22 +34,19 @@ const HomeContact: React.FC = () => {
               <p className="whitespace-nowrap text-[1.5rem] tracking-wide">
                 Wanna connect?
               </p>
-              <div
-                className="flex w-fit cursor-alias items-center justify-start gap-4 border-b-[3px] border-b-black pr-1 dark:border-b-white"
-                onClick={(e) => {
-                  window.location.href =
-                    "mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
-                  e.preventDefault()
-                }}
-              >
-                <p className="whitespace-nowrap text-[1.5rem] tracking-wide">
-                  Shoot me a message!
-                </p>
-                <MaskSvg
-                  className="h-[1rem] w-[1rem] dark:!bg-white"
-                  url="/img/icons/arrow-tr.svg"
-                  color="black"
-                />
+              <div className="w-fit">
+                <AnimatedLink
+                  href="mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
+                  color="from-jurreyellow to-jurreyellow dark:from-jurredarkyellow dark:to-jurredarkyellow"
+                  iconColor="!bg-jurreyellow dark:!bg-jurredarkyellow"
+                  iconSize="1rem"
+                >
+                  <div className="flex w-fit items-center justify-start gap-4">
+                    <p className="whitespace-nowrap text-[1.5rem] font-medium tracking-wide text-jurreyellow dark:text-jurredarkyellow">
+                      Shoot me a message!
+                    </p>
+                  </div>
+                </AnimatedLink>
               </div>
             </div>
           </div>

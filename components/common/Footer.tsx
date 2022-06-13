@@ -36,6 +36,8 @@ const Footer: React.FC = () => {
           <AnimatedLink
             href="mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
             color="from-black to-black dark:from-white dark:to-white"
+            iconColor="!bg-dark dark:!bg-white"
+            iconSize="0.7rem"
           >
             <div className="flex items-center justify-center gap-2">
               <MaskSvg
@@ -45,20 +47,6 @@ const Footer: React.FC = () => {
               <p className="text-black dark:text-white">contact@jurre.me</p>
             </div>
           </AnimatedLink>
-          {/* <div
-            className="flex cursor-alias items-center justify-center gap-2"
-            onClick={(e) => {
-              window.location.href =
-                "mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
-              e.preventDefault()
-            }}
-          >
-            <MaskSvg
-              className="mt-[0.1rem] h-4 w-4 dark:!bg-white"
-              url="/img/icons/mail.svg"
-            />
-            <p className="text-black dark:text-white">contact@jurre.me</p>
-          </div> */}
           <div className="flex items-center justify-center gap-5">
             <a
               href="https://www.instagram.com/jurre.053/"
