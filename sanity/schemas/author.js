@@ -1,12 +1,15 @@
+import { MdFace } from 'react-icons/md'
+
 export default {
   name: 'author',
   title: 'Author',
   type: 'document',
+  icon: MdFace,
   fields: [
     {
       name: 'name',
       title: 'Name',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'slug',
@@ -14,35 +17,40 @@ export default {
       type: 'slug',
       options: {
         source: 'name',
-        maxLength: 96,
-      },
+        maxLength: 96
+      }
     },
     {
-      name: 'image',
-      title: 'Image',
+      name: 'avatar',
+      title: 'Avatar',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     },
     {
       name: 'bio',
       title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+      type: 'string'
     },
+    {
+      name: 'socials',
+      title: 'Socials',
+      type: 'object',
+      fields: [
+        { name: 'instagram', title: 'Instagram', type: 'string' },
+        { name: 'github', title: 'GitHub', type: 'string' },
+        { name: 'twitter', title: 'Twitter', type: 'string' },
+        { name: 'discord', title: 'Discord', type: 'string' },
+        { name: 'linkedin', title: 'LinkedIn', type: 'string' },
+        { name: 'website', title: 'Website', type: 'string' }
+      ]
+    }
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image',
-    },
-  },
+      media: 'avatar'
+    }
+  }
 }
