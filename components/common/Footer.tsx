@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             href="mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
             color="from-black to-black dark:from-white dark:to-white"
             iconColor="!bg-dark dark:!bg-white"
-            iconSize="0.7rem"
+            iconSize="h-[0.7rem] w-[0.7rem]"
           >
             <div className="flex items-center justify-center gap-2">
               <MaskSvg

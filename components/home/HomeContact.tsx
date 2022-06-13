@@ -39,7 +39,7 @@ const HomeContact: React.FC = () => {
                   href="mailto:contact@jurre.me?subject=I'd%20like%20to%20talk!"
                   color="from-jurreyellow to-jurreyellow dark:from-jurredarkyellow dark:to-jurredarkyellow"
                   iconColor="!bg-jurreyellow dark:!bg-jurredarkyellow"
-                  iconSize="1rem"
+                  iconSize="h-[1rem] w-[1rem]"
                 >
                   <div className="flex w-fit items-center justify-start gap-4">
                     <p className="whitespace-nowrap text-[1.5rem] font-medium tracking-wide text-jurreyellow dark:text-jurredarkyellow">

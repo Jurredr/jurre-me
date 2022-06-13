@@ -28,14 +28,7 @@ const AnimatedLink: React.FC<Props> = (props) => {
         <span className="ml-[0.6rem] flex items-center justify-center">
           &#xfeff;
           <MaskSvg
-            className={
-              'iconColor h-[' +
-              props.iconSize +
-              '] w-[' +
-              props.iconSize +
-              '] ' +
-              props.iconColor
-            }
+            className={props.iconSize + ' ' + props.iconColor}
             url="/img/icons/arrow-tr.svg"
           />
         </span>
