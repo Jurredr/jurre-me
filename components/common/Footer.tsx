@@ -20,6 +20,9 @@ const Footer: React.FC = () => {
             <Logo color="black" />
           </motion.div>
           <motion.div
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
             className="hidden cursor-pointer dark:block"
             onClick={() => animateScroll.scrollToTop()}
           >
