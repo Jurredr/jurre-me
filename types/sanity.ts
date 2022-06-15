@@ -91,7 +91,7 @@ export interface Project extends SanityDocument {
    *
    *
    */
-  links: {
+  links?: {
     _type: 'links'
     /**
      * Project Website — `string`

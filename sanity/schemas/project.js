@@ -56,8 +56,7 @@ export default {
       fields: [
         { name: 'website', title: 'Project Website', type: 'string' },
         { name: 'github', title: 'GitHub Repository', type: 'string' }
-      ],
-      validation: (Rule) => Rule.required()
+      ]
     },
     {
       name: 'publishedAt',
