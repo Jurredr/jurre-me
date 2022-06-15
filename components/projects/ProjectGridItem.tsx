@@ -9,7 +9,6 @@ interface Props {
 const ProjectGridItem: React.FC<Props> = ({ project }) => {
   return (
     <motion.div
-      key={project._id}
       className="group flex cursor-pointer flex-col items-center justify-start pt-[1rem] md:items-start"
       whileHover="hover"
       whileTap="tap"

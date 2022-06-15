@@ -10,7 +10,7 @@ const ProjectsGrid: React.FC<Props> = ({ projects }) => {
     <div className="mt-16 mb-48 flex items-center justify-center overflow-hidden">
       <div className="grid grid-cols-1 gap-24 xl:grid-cols-2">
         {projects.map((project) => {
-          return <ProjectGridItem project={project} />
+          return <ProjectGridItem project={project} key={project._id} />
         })}
       </div>
     </div>
