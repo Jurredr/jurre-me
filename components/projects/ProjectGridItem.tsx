@@ -1,6 +1,7 @@
 import MaskSvg from '../common/MaskSvg'
 import type * as Schema from '../../types/sanity'
 import { motion } from 'framer-motion'
+import { builder } from '../../utils/sanity'
 
 interface Props {
   project: Schema.Project
@@ -22,7 +23,17 @@ const ProjectGridItem: React.FC<Props> = ({ project }) => {
             scale: 1.02
           }
         }}
-        className="flex h-[14rem] w-[20rem] items-end justify-end rounded-[2rem] bg-jurreoffwhite dark:bg-jurredarklight xs:h-[16rem] xs:w-[24rem] sm:h-[20rem] sm:w-[30rem] md:h-[21rem] md:w-[35rem]"
+        className={
+          'flex h-[14rem] w-[20rem] items-end justify-end rounded-[2rem] xs:h-[16rem] xs:w-[24rem] sm:h-[20rem] sm:w-[30rem] md:h-[21rem] md:w-[35rem] ' +
+          (project.mainImage
+            ? 'bg-cover bg-no-repeat'
+            : 'bg-jurreoffwhite dark:bg-jurredarklight')
+        }
+        style={{
+          backgroundImage: project.mainImage
+            ? `url(${builder.image(project.mainImage.asset).url()})`
+            : 'none'
+        }}
       >
         <div className="m-5 rounded-full bg-white p-4">
           <MaskSvg

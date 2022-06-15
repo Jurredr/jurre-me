@@ -29,11 +29,6 @@ interface Props {
 }
 
 const Projects: NextPage<Props> = ({ projects }) => {
-  useEffect(() => {
-    console.log(projects[0])
-    console.log(builder.image(projects[0].mainImage?.asset || '').url())
-  }, [])
-
   const title = 'Projects'
   const description =
     'Find out about all the development projects I have worked on!'
