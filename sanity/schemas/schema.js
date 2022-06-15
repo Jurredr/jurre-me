@@ -3,7 +3,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
-// import svgUploadPreview from 'sanity-plugin-inline-svg'
+import svgUploadPreview from 'sanity-plugin-inline-svg'
 
 // We import object and document schemas
 import blockContent from './blockContent'
@@ -18,7 +18,7 @@ export default createSchema({
     project,
     author,
     techstack,
-    blockContent
-    // svgUploadPreview
+    blockContent,
+    svgUploadPreview
   ])
 })
