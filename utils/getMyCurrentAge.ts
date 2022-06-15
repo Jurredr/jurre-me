@@ -1,4 +1,4 @@
-const getMyCurrentAge = () => {
+export default function getMyCurrentAge() {
   const today = new Date()
   const birthDate = new Date('07-29-2002')
   let age = today.getFullYear() - birthDate.getFullYear()
@@ -8,5 +8,3 @@ const getMyCurrentAge = () => {
   }
   return age
 }
-
-export default getMyCurrentAge

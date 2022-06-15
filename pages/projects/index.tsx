@@ -7,6 +7,7 @@ import ProjectsGrid from '../../components/projects/ProjectsGrid'
 import sanity, { builder } from '../../utils/sanity'
 import type * as Schema from '../../types/sanity'
 import { useEffect } from 'react'
+import getSinglePluralText from '../../utils/getSinglePluralText'
 
 export async function getStaticProps() {
   const query = `*[_type == "project"] | order(publishedAt desc){
@@ -45,8 +46,12 @@ const Projects: NextPage<Props> = ({ projects }) => {
         // imageUrl={'/img/projects.png'}
       />
       <PageHero title={title}>
-        All <span className="font-medium text-jurreyellow">43</span> projects I
-        have worked on can be found here. 🔨
+        {getSinglePluralText('The ', 'All ', projects.length)}
+        <span className="font-medium text-jurreyellow">
+          {projects.length}
+        </span>{' '}
+        {getSinglePluralText('project', 'projects', projects.length)} I have
+        worked on can be found here. 🔨
       </PageHero>
       <SearchBar />
       <ProjectsGrid projects={projects} />
