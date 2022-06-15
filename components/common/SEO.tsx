@@ -53,8 +53,8 @@ export const SEO = memo<Props>(
             site_name: SITE_TITLE,
             images: [
               {
-                width: 1200,
-                height: 880,
+                // width: 1200,
+                // height: 880,
                 alt: title,
                 url: `${HOST}${imageUrl}`
               }
