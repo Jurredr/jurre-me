@@ -49,21 +49,21 @@ export interface Project extends SanityDocument {
    *
    *
    */
-  title?: string
+  title: string
 
   /**
    * Slug — `slug`
    *
    *
    */
-  slug?: { _type: 'slug'; current: string }
+  slug: { _type: 'slug'; current: string }
 
   /**
    * Author — `reference`
    *
    *
    */
-  author?: SanityReference<Author>
+  author: SanityReference<Author>
 
   /**
    * Main image — `image`
@@ -77,19 +77,21 @@ export interface Project extends SanityDocument {
     hotspot?: SanityImageHotspot
   }
 
+  description?: string
+
   /**
    * Tech Stack — `array`
    *
    *
    */
-  techstack?: Array<Techstack>
+  techstack: Array<Techstack>
 
   /**
    * Links — `object`
    *
    *
    */
-  links?: {
+  links: {
     _type: 'links'
     /**
      * Project Website — `string`
@@ -111,14 +113,14 @@ export interface Project extends SanityDocument {
    *
    *
    */
-  publishedAt?: string
+  publishedAt: string
 
   /**
    * Body — `blockContent`
    *
    *
    */
-  body?: BlockContent
+  body: BlockContent
 }
 
 /**
@@ -134,14 +136,14 @@ export interface Author extends SanityDocument {
    *
    *
    */
-  name?: string
+  name: string
 
   /**
    * Slug — `slug`
    *
    *
    */
-  slug?: { _type: 'slug'; current: string }
+  slug: { _type: 'slug'; current: string }
 
   /**
    * Avatar — `image`
@@ -167,7 +169,7 @@ export interface Author extends SanityDocument {
    *
    *
    */
-  socials?: {
+  socials: {
     _type: 'socials'
     /**
      * Instagram — `string`
@@ -226,7 +228,7 @@ export interface Techstack extends SanityDocument {
    *
    *
    */
-  name?: string
+  name: string
 
   /**
    * Color — `color`

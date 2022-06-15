@@ -9,7 +9,8 @@ export default {
     {
       name: 'name',
       title: 'Name',
-      type: 'string'
+      type: 'string',
+      validation: (Rule) => Rule.required()
     },
     {
       name: 'slug',
@@ -18,7 +19,8 @@ export default {
       options: {
         source: 'name',
         maxLength: 96
-      }
+      },
+      validation: (Rule) => Rule.required()
     },
     {
       name: 'avatar',
@@ -44,7 +46,8 @@ export default {
         { name: 'discord', title: 'Discord', type: 'string' },
         { name: 'linkedin', title: 'LinkedIn', type: 'string' },
         { name: 'website', title: 'Website', type: 'string' }
-      ]
+      ],
+      validation: (Rule) => Rule.required()
     }
   ],
   preview: {
