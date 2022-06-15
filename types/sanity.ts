@@ -267,4 +267,4 @@ type Color = string
  * the definition was not actually found. Future versions of
  * sanity-codegen will let you type this explicity.
  */
-type SvgUploadPreview = SanityReference<SanityImageAsset>
+type SvgUploadPreview = string

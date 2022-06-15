@@ -4,8 +4,35 @@ import PageHero from '../../components/common/PageHero'
 import SearchBar from '../../components/projects/SearchBar'
 import { SEO } from '../../components/common/SEO'
 import ProjectsGrid from '../../components/projects/ProjectsGrid'
+import sanity, { builder } from '../../utils/sanity'
+import type * as Schema from '../../types/sanity'
+import { useEffect } from 'react'
 
-const Projects: NextPage = () => {
+export async function getStaticProps() {
+  const query = `*[_type == "project"] | order(publishedAt desc){
+    ...,
+    author->,
+    techstack[]->
+  }
+  `
+  const projects = await sanity.fetch(query)
+  return {
+    props: {
+      projects
+    }
+  }
+}
+
+interface Props {
+  projects: Schema.Project[]
+}
+
+const Projects: NextPage<Props> = ({ projects }) => {
+  useEffect(() => {
+    console.log(projects[0])
+    console.log(builder.image(projects[0].mainImage?.asset || '').url())
+  }, [])
+
   const title = 'Projects'
   const description =
     'Find out about all the development projects I have worked on!'
