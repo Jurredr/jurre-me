@@ -49,7 +49,7 @@ const Projects: NextPage<Props> = ({ projects }) => {
         have worked on can be found here. 🔨
       </PageHero>
       <SearchBar />
-      <ProjectsGrid />
+      <ProjectsGrid projects={projects} />
     </Layout>
   )
 }

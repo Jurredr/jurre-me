@@ -82,7 +82,7 @@ export interface Project extends SanityDocument {
    *
    *
    */
-  techstack?: Array<SanityKeyedReference<Techstack>>
+  techstack?: Array<Techstack>
 
   /**
    * Links — `object`
