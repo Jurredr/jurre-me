@@ -41,6 +41,15 @@ export default {
       of: [{ type: 'reference', to: { type: 'techstack' } }]
     },
     {
+      name: 'links',
+      title: 'Links',
+      type: 'object',
+      fields: [
+        { name: 'website', title: 'Project Website', type: 'string' },
+        { name: 'github', title: 'GitHub Repository', type: 'string' }
+      ]
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime'
