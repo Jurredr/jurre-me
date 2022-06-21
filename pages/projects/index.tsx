@@ -4,9 +4,8 @@ import PageHero from '../../components/common/PageHero'
 import SearchBar from '../../components/projects/SearchBar'
 import { SEO } from '../../components/common/SEO'
 import ProjectsGrid from '../../components/projects/ProjectsGrid'
-import sanity, { builder } from '../../utils/sanity'
+import sanity from '../../utils/sanity'
 import type * as Schema from '../../types/sanity'
-import { useEffect } from 'react'
 import getSinglePluralText from '../../utils/getSinglePluralText'
 
 export async function getStaticProps() {

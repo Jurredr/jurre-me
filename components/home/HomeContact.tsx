@@ -14,6 +14,7 @@ const HomeContact: React.FC = () => {
               layout="fill"
               draggable={false}
               quality={100}
+              alt="Rainbow colored decorative wave shapes for light mode."
             />
           </div>
           <div className="relative hidden h-full w-full dark:block">
@@ -22,6 +23,7 @@ const HomeContact: React.FC = () => {
               layout="fill"
               draggable={false}
               quality={100}
+              alt="Rainbow colored decorative wave shapes for dark mode."
             />
           </div>
         </div>
@@ -56,6 +58,7 @@ const HomeContact: React.FC = () => {
                 src="/img/icons/instagram-fill.svg"
                 layout="fill"
                 draggable={false}
+                alt="Instagram logo icon with brand color gradient."
               />
             </ShadowButton>
             <ShadowButton href="https://twitter.com/JurredeRuiter">

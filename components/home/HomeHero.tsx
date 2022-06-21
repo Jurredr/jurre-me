@@ -114,6 +114,7 @@ const HomeHero: React.FC = () => {
           quality={100}
           draggable={false}
           priority={true}
+          alt="3D character of Jurre de Ruiter waving."
         />
       </motion.div>
       <div className="absolute -left-10 right-0 -bottom-[61%] h-full w-[200%] dark:hidden lg:w-[110%]">
@@ -123,6 +124,7 @@ const HomeHero: React.FC = () => {
           quality={100}
           draggable={false}
           priority={true}
+          alt="Rainbow colored decorative wave shape for light mode."
         />
       </div>
       <div className="absolute -left-10 right-0 -bottom-[61%] hidden h-full w-[200%] dark:block lg:w-[110%]">
@@ -132,6 +134,7 @@ const HomeHero: React.FC = () => {
           quality={100}
           draggable={false}
           priority={true}
+          alt="Rainbow colored decorative wave shape for dark mode."
         />
       </div>
     </div>
