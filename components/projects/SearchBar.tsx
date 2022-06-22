@@ -1,6 +1,11 @@
+import { ChangeEvent, Dispatch, SetStateAction } from 'react'
 import MaskSvg from '../common/MaskSvg'
 
-const SearchBar: React.FC = () => {
+interface Props {
+  setSearchQuery: Dispatch<SetStateAction<string>>
+}
+
+const SearchBar: React.FC<Props> = (props) => {
   return (
     <div className="mt-6 flex items-center justify-center">
       <div className="flex items-center justify-start gap-2 rounded-2xl border-2 border-jurrelightgray bg-white py-[0.6rem] px-5">
@@ -15,6 +20,9 @@ const SearchBar: React.FC = () => {
           name="Search"
           id="projects-search-input"
           placeholder="Search..."
+          onChange={(event: ChangeEvent<HTMLInputElement>) =>
+            props.setSearchQuery(event.target.value.toLowerCase())
+          }
         />
       </div>
     </div>

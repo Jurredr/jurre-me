@@ -13,6 +13,7 @@ const ProjectGridItem: React.FC<Props> = ({ project }) => {
       className="group flex cursor-pointer flex-col items-center justify-start pt-[1rem] md:items-start"
       whileHover="hover"
       whileTap="tap"
+      layout
     >
       <motion.div
         variants={{
@@ -34,6 +35,8 @@ const ProjectGridItem: React.FC<Props> = ({ project }) => {
             ? `url(${builder.image(project.mainImage.asset).url()})`
             : 'none'
         }}
+        // layoutId={`thumbnail-container-${project.slug}`}
+        // key={'thumbnail'}
       >
         <div className="m-5 rounded-full bg-white p-4">
           <MaskSvg
@@ -43,14 +46,23 @@ const ProjectGridItem: React.FC<Props> = ({ project }) => {
           />
         </div>
       </motion.div>
-      <div className="xs:ml-4">
-        <h1 className="mt-3 mb-2 w-fit bg-gradient-to-r from-black to-black bg-[length:0%_3px] bg-left-bottom bg-no-repeat font-freigeistwide text-[2.5rem] font-black tracking-[-0.07em] transition-all group-hover:bg-[length:100%_3px] group-focus:bg-[length:100%_3px] dark:from-white dark:to-white">
+      <div className="flex-wrap xs:ml-4">
+        <motion.h2
+          className="mt-3 mb-2 w-fit bg-gradient-to-r from-black to-black bg-[length:0%_3px] bg-left-bottom bg-no-repeat font-freigeistwide text-[2.5rem] font-black tracking-[-0.07em] transition-all group-hover:bg-[length:100%_3px] group-focus:bg-[length:100%_3px] dark:from-white dark:to-white"
+          // layoutId={`title-container-${project.slug}`}
+        >
           {project.title}
-        </h1>
-        <p className="text-md max-w-[18rem] text-jurregray dark:text-jurredarkgray xs:max-w-[24rem] sm:max-w-[28rem] sm:text-lg md:max-w-[30rem]">
+        </motion.h2>
+        <motion.p
+          className="text-md max-w-[18rem] text-jurregray dark:text-jurredarkgray xs:max-w-[24rem] sm:max-w-[28rem] sm:text-lg md:max-w-[30rem]"
+          // layoutId={`description-container-${project.slug}`}
+        >
           {project.description}
-        </p>
-        <div className="mt-3 flex gap-2">
+        </motion.p>
+        <motion.div
+          className="mt-3 flex gap-2"
+          // layoutId={`stack-container-${project.slug}`}
+        >
           {project.techstack.map((stack) => {
             return (
               <p
@@ -61,7 +73,7 @@ const ProjectGridItem: React.FC<Props> = ({ project }) => {
               </p>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   )
