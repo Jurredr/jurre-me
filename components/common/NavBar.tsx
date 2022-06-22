@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { memo } from 'react'
 import { Route } from '../../types'
+import { basicHoverTapScale } from '../../utils/animation'
 import Logo from './Logo'
 import MaskSvg from './MaskSvg'
 import ThemeToggler from './theme-toggler/ThemeToggler'
@@ -26,14 +27,24 @@ export const NavBar = memo<Props>(({ routes }) => {
           </a>
         </Link>
         <Link href="/">
-          <a className="hidden cursor-pointer dark:hidden sm:block">
+          <motion.a
+            className="hidden cursor-pointer dark:hidden sm:block"
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
+          >
             <Logo color="black" />
-          </a>
+          </motion.a>
         </Link>
         <Link href="/">
-          <a className="hidden cursor-pointer dark:sm:block">
+          <motion.a
+            className="hidden cursor-pointer dark:sm:block"
+            whileHover={basicHoverTapScale.hover}
+            whileTap={basicHoverTapScale.tap}
+            transition={{ duration: basicHoverTapScale.duration }}
+          >
             <Logo color="white" />
-          </a>
+          </motion.a>
         </Link>
         <div className="flex h-12 items-center justify-center gap-3">
           <nav className="z-0 flex h-full rounded-xl bg-jurrelightgray dark:bg-jurredarklight">
