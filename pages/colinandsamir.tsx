@@ -1,9 +1,16 @@
 import { motion } from 'framer-motion'
+import { useTheme } from 'next-themes'
 import Image from 'next/image'
+import { useEffect } from 'react'
 import MaskSvg from '../components/common/MaskSvg'
 import ShadowButton from '../components/common/ShadowButton'
 
 const ColinAndSamir: React.FC = () => {
+  const { theme, setTheme } = useTheme()
+  useEffect(() => {
+    setTheme('light')
+  })
+
   return (
     <div className="h-full w-full overflow-hidden bg-[#efefef]">
       <nav className="flex items-center justify-center">
