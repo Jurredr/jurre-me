@@ -2,12 +2,14 @@
 @import 'fonts/fonts.freigeist-regular.scss';
 @import 'fonts/fonts.freigeist-wide.scss';
 
+@import 'fonts/fonts.roslindale.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 p {
-  @apply font-euclid
+  @apply font-euclid;
 }
 
 .noselect {

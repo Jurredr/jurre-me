@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Roslindale';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/img/colinandsamir/fonts/Roslindale-DisplayMedium-Testing.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Roslindale';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Roslindale Display SemiBold'),
+    url('../../public/img/colinandsamir/fonts/Roslindale-DisplaySemiBold-Testing.otf')
+      format('opentype');
+}
+
+@font-face {
+  font-family: 'Roslindale';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roslindale Display Bold'),
+    url('../../public/img/colinandsamir/fonts/Roslindale-DisplayBold-Testing.otf')
+      format('opentype');
+}
